@@ -1,0 +1,48 @@
+
+
+nav {
+    background-color: red;
+    display: flex;
+    opacity: .9;
+    /* position: fixed; */
+    align-items: center;
+}
+
+.home-btn {
+    /* width: 10vw; */
+    background: #4CAF50;
+    border: none;
+    border-radius: 25px;
+    color: snow; 
+    cursor: pointer;
+    font-size: 1.25em;
+    letter-spacing: .1em;
+    outline: none;
+    padding: .75em 2em;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.home-btn::before {
+    background: #4CAF50;
+    border-radius: inherit;
+    content: '';
+    filter: blur(10px); 
+    opacity: .75;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.home-btn:hover::before {
+    /* // Increases the extent of the glow on hover */
+    filter: blur(20px); 
+    opacity: 1;
+}
+
+/* To make button Pulse */
+/* Need SCSS --> https://codepen.io/Splode/post/making-a-glowing-button */
