@@ -1,15 +1,62 @@
 
 
-nav {
-    background-color: red;
-    display: flex;
-    opacity: .9;
-    /* position: fixed; */
-    align-items: center;
+.home-container {
+    margin-right: 7vw;
+    margin-left: 7vw;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.home-btn {
-    /* width: 10vw; */
+.signup-container {
+    position: inherit;
+    margin-top: 20vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 80vh;
+    /* align-items: center; */
+
+}
+
+.signup-container-1 {
+    /* width: 50%; */
+    max-width: 50%;
+}
+.signup-container-2 {
+    /* width: 50%; */
+    /* max-width: 50%; */
+
+}
+
+.signup-form {
+    /* width: 80%; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 5vh;
+}
+
+.signup-input {
+    width: 75%;
+    /* flex-shrink: 1; */
+    border-radius: 10px;
+    border: 1px solid gray;
+    text-align: center;
+
+
+}
+
+.signup-btn {
+    width: 20%;
+    border-radius: 10px;
+    border: 1px solid gray;
+
+
+}
+
+/* .home-btn {
+    width: 10vw; --> was commented out not sure if needed
     background: #4CAF50;
     border: none;
     border-radius: 25px;
@@ -39,10 +86,9 @@ nav {
 }
 
 .home-btn:hover::before {
-    /* // Increases the extent of the glow on hover */
     filter: blur(20px); 
     opacity: 1;
-}
+} */
 
 /* To make button Pulse */
 /* Need SCSS --> https://codepen.io/Splode/post/making-a-glowing-button */

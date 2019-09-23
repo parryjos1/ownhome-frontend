@@ -1,0 +1,30 @@
+.nav-homepage {
+    background-color: #a8eef4;
+    position: fixed;
+    min-width: 100%;
+    min-height: 7.5vh;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-left {
+    list-style-type: none;
+    align-self: center;
+}
+
+.nav-left li {
+    list-style-type: none;
+}
+
+.nav-right {
+    display: flex;
+    align-self: center;
+}
+
+.nav-right li {
+    display: block;
+    padding-right: 15px;
+}
