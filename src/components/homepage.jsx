@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import './homepage.css'
 import  Nav from './nav/nav.jsx'
+import Faq from './houses/faq.jsx'
 
 class Home extends Component {
 
@@ -23,6 +24,7 @@ class Home extends Component {
             {/* A new affordable way to own your dream home launching</p> */}
             {/* <p>Owning a house in australia has become impossible. We're flipping the model to give everyone a chance </p> */}
             <p>Flipping home ownership on its head to give everyone the chance to afford to own a home. Launching soon</p>
+            {/* <p>revolutionary new way to afford a home</p> */}
 
               <form className='signup-form' >
                 <input type='text'  className='signup-input' placeholder='Enter email address' />
@@ -38,6 +40,8 @@ class Home extends Component {
           </div>
 
         </div>
+
+        <Faq />
       </div>
     )
   }

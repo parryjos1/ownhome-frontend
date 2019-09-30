@@ -1,0 +1,15 @@
+
+
+.faq-containter {
+    background-color: pink;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-toggle {
+    width: 5vw;
+    height: 5vh;
+}
