@@ -20,6 +20,9 @@ class Faq extends Component {
         const divToChange = event.target.id;
         const prevOpenFaq = this.state.prevOpen;
 
+        console.log(`${divToChange} div to change`)
+        console.log(`${prevOpenFaq} prevOpenFaq`)
+
         // Close the previous open FAQ
         this.setState(prevState => ({
             [prevOpenFaq]: !prevState[prevOpenFaq]
@@ -32,6 +35,33 @@ class Faq extends Component {
 
         // Update current open FAQ
         this.setState({prevOpen: divToChange})
+
+        // this.setState({prevOpen: divToChange})
+
+        // if (divToChange === prevOpenFaq) {
+
+        //     this.setState(prevState => ({
+        //         [divToChange]: !prevState[divToChange]
+        //     }));
+
+            
+        // } else {
+
+        //     // Close the previous open FAQ
+        //     this.setState(prevState => ({
+        //         [prevOpenFaq]: !prevState[prevOpenFaq]
+        //     }));
+    
+        //     // Open the new FAQ
+        //     this.setState(prevState => ({
+        //         [divToChange]: !prevState[divToChange]
+        //     }));
+    
+        //     // Update current open FAQ
+        //     // this.setState({prevOpen: divToChange})
+        // }
+
+
     }
 
 

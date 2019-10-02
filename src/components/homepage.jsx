@@ -35,6 +35,14 @@ class Home extends Component {
             </div>
             <div className='signup-container-2'>
               <h1>Video goes here</h1>
+
+              <iframe className='landing-page-explainer-video' width="420" height="315"
+              src="https://www.youtube.com/embed/tgbNymZ7vqY">
+              </iframe>
+
+
+
+              
             </div>
 
           </div>

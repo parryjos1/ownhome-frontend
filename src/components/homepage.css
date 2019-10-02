@@ -43,8 +43,6 @@
     border-radius: 10px;
     border: 1px solid gray;
     text-align: center;
-
-
 }
 
 .signup-btn {
@@ -52,8 +50,10 @@
     padding: 10px;
     border-radius: 10px;
     border: 1px solid gray;
+}
 
-
+.landing-page-explainer-video {
+    border: none;
 }
 
 /* .home-btn {
