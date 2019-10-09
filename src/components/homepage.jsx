@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import './homepage.css'
-import  Nav from './nav/nav.jsx'
-import Faq from './houses/faq.jsx'
+import './homepage.css';
+import  Nav from './nav/nav.jsx';
+import Faq from './houses/faq/faq.jsx';
+import About from './houses/about/about.jsx';
+import Works from './houses/how-it-works/works.jsx';
 
 class Homepage extends Component {
 
@@ -51,7 +53,8 @@ class Homepage extends Component {
 
 
                 </div>
-
+                <About />
+                <Works />
                 <Faq />
             </div>
         )
@@ -59,18 +62,3 @@ class Homepage extends Component {
 }
 
 export default Homepage
-
-// <div>
-// <h1>Centering with CSS</h1>
-
-// <h3>Text-Align Method</h3>
-// <div class="blue-square-container">
-// <div class="blue-square"></div>
-// </div>
-
-// <h3>Margin Auto Method</h3>
-// <div class="yellow-square"></div>
-
-// <h3>Absolute Positioning Method</h3>
-// <div class="green-square"></div>
-// </div>
