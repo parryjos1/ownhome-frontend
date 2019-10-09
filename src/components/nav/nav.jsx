@@ -16,7 +16,7 @@ class Nav extends Component {
             <ul className="nav-right">
             <li>FAQs</li>
             <li>Blog</li>
-            <li><Link to="/jobs">Jobs</Link></li>
+            <li><Link to="/services">Hire Tradie</Link></li>
             </ul>
         </div>
     </nav>

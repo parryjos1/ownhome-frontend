@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
+import MasterForm from './form/MasterForm';
 
-class NewJob extends Component {
+class PostJob extends Component {
 
   constructor(props){
     super(props);
     this.state = {
       title: '',
       category: '',
-      price: 0
+      price: 0,
+      description: ''
     }
 
 
@@ -30,13 +32,16 @@ class NewJob extends Component {
     let body = {
       title: this.state.title,
       category: this.state.category,
-      price: this.state.price
+      price: this.state.price,
+      description: this.state.description
     }
     axios.post('http://localhost:4000/jobs/new', body)
     .then(res => {
       console.log(res);
     })
   }
+
+
 
 
   render(){
@@ -47,12 +52,17 @@ class NewJob extends Component {
         </nav>
         <h3>New a Job</h3>
 
-      <form onSubmit={this.onSubmit}>
+        <MasterForm />
+
+        
+
+      {/* <form onSubmit={this.onSubmit}>
         <input type="text" placeholder="Title" onChange={this.onChangeTitle} />
         <input type="text" placeholder="Category" onChange={this.onChangeCategory} />
         <input type="text" placeholder="Price" onChange={this.onChangePrice} />
+        <input type="text" placeholder="Description" onChange={this.onChangePrice} />
         <input type="submit" />
-      </form>
+      </form> */}
 
 
       </div>
@@ -60,4 +70,4 @@ class NewJob extends Component {
   }
 }
 
-export default NewJob
+export default PostJob

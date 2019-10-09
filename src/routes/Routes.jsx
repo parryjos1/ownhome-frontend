@@ -3,17 +3,19 @@ import {HashRouter as Router, Route} from 'react-router-dom';
 
 import Home from '../components/homepage';
 import Jobs from '../components/services/allJobs';
-import NewJob from '../components/services/newJob'
+import PostJob from '../components/services/PostJob/PostJob'
 import Job from '../components/services/job'
+import ServicesHome from '../components/services/homepage/ServicesHome';
 
 const Routes = (
 
   <Router>
 
     <Route exact path="/" component={Home} />
-    <Route exact path="/jobs" component={Jobs} />
-    <Route exact path="/jobs/addjob" component={NewJob} />
-    <Route exact path="/jobs/:id" component={Job} />
+    <Route exact path="/services/jobs" component={Jobs} />
+    <Route exact path="/services/postjob" component={PostJob} />
+    <Route exact path="/services/jobs/:id" component={Job} />
+    <Route exact path="/services" component={ServicesHome} />
 
   </Router>
 )

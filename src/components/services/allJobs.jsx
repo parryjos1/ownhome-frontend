@@ -52,7 +52,7 @@ class Jobs extends Component {
           ?
           this.state.jobs.map(j =>
             <div>
-            <div><Link to={'/jobs/' + j._id}>{j.title}</Link></div>
+            <div><Link to={'/services/jobs/:id' + j._id}>{j.title}</Link></div>
             <div>{j.category}</div>
             <div>{j.price}</div>
             <br />
