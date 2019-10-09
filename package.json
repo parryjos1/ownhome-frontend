@@ -2,16 +2,20 @@
   "name": "ownhome-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://parryjos1.github.io/ownhome-frontend",
   "dependencies": {
     "acorn": "^7.0.0",
     "axios": "^0.19.0",
     "core-util-is": "^1.0.2",
+    "gh-pages": "^2.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
