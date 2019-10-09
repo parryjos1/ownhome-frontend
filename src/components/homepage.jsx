@@ -51,6 +51,8 @@ class Homepage extends Component {
 
 
                 </div>
+
+                <Faq />
             </div>
         )
     }
