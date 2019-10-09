@@ -1,52 +1,56 @@
 
 
 .home-container {
-
     background-color: #a8eef4;
     margin-top: 10vh;
     height: 90vh;
     text-align: center;
+}
 
+.home-title {
+    width: 70vw;
+    text-align: center;
+    margin-left: 15vw;
+    margin-bottom: 5vh;
+}
+
+.home-title h1 {
+    font-size: 60px;
+    padding-top: 2vh;
+}
+
+.home-video {
+    margin-bottom: 4vh;
 }
 
 .landing-page-explainer-video {
     border: none;
     width: 70vw;
-    height: 40vh;
+    height: 50vh;
 }
 
-/* .home-video {
-    text-align: center;
-} */
-
-/* h1,
-h3 {
-  text-align: center;
+.signup-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40vw;
+    margin-left: 30vw;
+    font-size: 20px;    
 }
 
-.blue-square-container {
-  text-align: center;
+.signup-input {
+    height: 6vh;
+    /* width: 300px */
+    /* width: 75%; */
+    /* flex: 3 1 200px */
+    flex: 2 1 60%;
 }
 
-.blue-square {
-  background-color: #0074D9;
-  width: 100px;
-  height: 100px;
-  display: inline-block;
+.signup-btn {
+    height: 6.6vh;
+    /* width: 100px; */
+    /* width: 25%; */
+    /* flex: 1 1 200px */
+    flex: 1 1 35%;
+    margin-left: 1.5%;
 }
-
-.yellow-square {
-  background-color: #FFDC00;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-}
-
-.green-square {
-  background-color: #3D9970;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  left: 50%;
-  margin-left: -50px;
-} */

@@ -19,7 +19,9 @@ class Homepage extends Component {
                     {/* <h1>OwnHome</h1> */}
                     {/* <h2>Aussie house prices are F#%$ed. We've got a fix.</h2> */}
                     {/* <h2>House prices are F#%$ed. We've got a fix.</h2> */}
-                        <h1>House Prices are cooked</h1>
+                        {/* <h1>House Prices are cooked</h1> */}
+                        {/* <h1>House Prices are F#$%ed. We've got a fix.</h1> */}
+                        <h1>House Prices are F#$%ed.</h1>
                         <h3>OwnHome is getting people on the housing ladder with our innovative solution</h3>
 
                             {/* <h2>Actually have a chance to own a home Australia</h2> */}
