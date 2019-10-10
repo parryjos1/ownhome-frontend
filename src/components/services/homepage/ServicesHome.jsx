@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import Nav from '../../nav/nav.jsx';
+import About from '../About/AboutOHS'
+import Work from '../how-it-works/WorksOHS'
 
 class ServicesHome extends Component {
 
@@ -15,6 +17,9 @@ class ServicesHome extends Component {
                 <div className='book-service'>
                     <button><Link to="/services/postjob">Post a job</Link></button>
                 </div>
+
+                <About />
+                <Work />
             </div>
         )
     }

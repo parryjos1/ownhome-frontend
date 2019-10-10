@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
+import './WorksOHS.css'
 
-class Works extends Component {
+class Work extends Component {
 
     render() {
         return(
             <div>
-                <h1>Welcome to the How it works page</h1>
+                <h2>Welcome to the Work page</h2>
             </div>
         )
     }
 }
 
-export default Works
-
+export default Work
