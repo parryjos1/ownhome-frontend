@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import './nav.css';
 import DrawerToggleButton from '../SideDraw/DrawerToggleButton'
 
@@ -10,9 +11,11 @@ const nav = props => (
             <div className="spacer"></div>
             <div className="nav-items">
                 <ul>
-                    <li><a href="/">Products</a></li>
-                    <li><a href="/">Users</a></li>
-                    <li><a href="/">Signin</a></li>
+                {
+                Object.entries(props.navItems).map((k, v) => 
+                    <li><Link to={`${k[1]}`}>{k[0]}</Link></li>
+                )
+                }
                 </ul>
             </div>
             <div className="nav-toggle-btn">

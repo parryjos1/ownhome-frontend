@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './SideDrawer.css'
 
 const sideDrawer = props => {
@@ -9,9 +10,16 @@ const sideDrawer = props => {
     }
    return ( 
    <nav className={drawerClasses}>
-        <ul>
+        {/* <ul>
             <li><a href="/">Products</a></li>
             <li><a href="/">Users</a></li>
+        </ul> */}
+        <ul>
+            {
+            Object.entries(props.navItems).map((k, v) => 
+                <li><Link to={`${k[1]}`}>{k[0]}</Link></li>
+            )
+            }
         </ul>
     </nav>
    );

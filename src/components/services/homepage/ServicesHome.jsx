@@ -8,10 +8,13 @@ import Work from '../how-it-works/WorksOHS'
 class ServicesHome extends Component {
 
     render() {
+
+        let navItems = {'About': '/about', 'How it works': '/how-it-works', 'Signup': '/signup'}
+
         return(
             <div>
                 {/* <Nav /> */}
-                <Navbar />
+                <Navbar navItems={ navItems }/> />
                 <h1>Filler underneath the nav</h1>   
                 <h2>Welcome to the other page</h2> 
                 <h2>Hire professional/accredited tradies</h2>

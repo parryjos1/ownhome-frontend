@@ -38,8 +38,8 @@ class Navbar extends Component {
         return (
             <div className='navbar'>
 
-                <Nav drawerClickHandler={this.drawerToggleClickHandler}/>
-                <Sidedrawer show={this.state.sideDrawerOpen}/>
+                <Nav drawerClickHandler={this.drawerToggleClickHandler} navItems={this.props.navItems} />
+                <Sidedrawer show={this.state.sideDrawerOpen} navItems={this.props.navItems} />
                 {backdrop}
 
             </div>
