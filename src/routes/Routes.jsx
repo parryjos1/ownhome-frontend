@@ -1,5 +1,6 @@
 import React from 'react';
-import {HashRouter as Router, Route} from 'react-router-dom';
+// import {HashRouter as Router, Route} from 'react-router-dom';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 
 import Home from '../components/homepage';
 import Jobs from '../components/services/allJobs';

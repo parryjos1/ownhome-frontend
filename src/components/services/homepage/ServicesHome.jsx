@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import Navbar from '../Navbar/Navbar'
-// import Nav from '../../nav/nav.jsx';
 import About from '../About/AboutOHS'
 import Work from '../how-it-works/WorksOHS'
+import './ServicesHome.css';
 
 class ServicesHome extends Component {
 
@@ -13,15 +13,26 @@ class ServicesHome extends Component {
 
         return(
             <div>
-                {/* <Nav /> */}
-                <Navbar navItems={ navItems }/> />
-                <h1>Filler underneath the nav</h1>   
-                <h2>Welcome to the other page</h2> 
-                <h2>Hire professional/accredited tradies</h2>
-                <p>Post a job, get free quotes, no commitment</p>
-                <div className='book-service'>
-                    <button><Link to="/services/postjob">Post a job</Link></button>
+                <Navbar navItems={ navItems }/>
+
+                <div className="services-homepage">
+                    <h1>Easiest way to hire tradies online</h1>
+                    <h3>Free bids from accredited tradies in 1 minute</h3>
+                    <form>
+                        <input type="text" placeholder="What are you looking for?" />
+                        <input type="submit" value="Get Free Quotes" />
+                    </form>  
+                    <br />
+                    <div>
+                        <label>For Tradies</label>
+                        <button>Set up my business</button>
+                    </div> 
                 </div>
+
+                
+                {/* <div className='book-service'>
+                    <button><Link to="/services/postjob">Post a job</Link></button>
+                </div> */}
 
                 <About />
                 <Work />
