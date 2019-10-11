@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import Nav from '../../nav/nav.jsx';
+import Navbar from '../Navbar/Navbar'
+// import Nav from '../../nav/nav.jsx';
 import About from '../About/AboutOHS'
 import Work from '../how-it-works/WorksOHS'
 
@@ -9,7 +10,8 @@ class ServicesHome extends Component {
     render() {
         return(
             <div>
-                <Nav />
+                {/* <Nav /> */}
+                <Navbar />
                 <h1>Filler underneath the nav</h1>   
                 <h2>Welcome to the other page</h2> 
                 <h2>Hire professional/accredited tradies</h2>
