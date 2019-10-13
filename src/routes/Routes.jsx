@@ -8,6 +8,8 @@ import PostJob from '../components/services/PostJob/PostJob'
 import Job from '../components/services/job'
 import ServicesHome from '../components/services/homepage/ServicesHome';
 
+import Parent from '../components/services/PassData/Parent';
+
 const Routes = (
 
   <Router>
@@ -17,6 +19,8 @@ const Routes = (
     <Route exact path="/services/postjob" component={PostJob} />
     <Route exact path="/services/jobs/:id" component={Job} />
     <Route exact path="/services" component={ServicesHome} />
+
+    <Route exact path="/services/parent" component={Parent} />
 
   </Router>
 )

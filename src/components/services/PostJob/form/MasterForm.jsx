@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
-import JobType from './JobType'
+import JobType from './JobInfo'
 import Description from './Description'
 import Address from './Address'
 import Confirmation from './Confirmation'
+
+let testVar;
+
+// NOTE: THis not used anymore
 
 class MasterForm extends Component {
 
@@ -10,31 +14,46 @@ class MasterForm extends Component {
         super(props)
         this.state = {
             step: 1
+            // step: this.props.stateChange
         }
     }
 
-    handleChange = input => event => {
-        this.setState({ [input] : event.target.value })
-    }
+    // handleChange = input => event => {
+    //     this.setState({ [input] : event.target.value })
+    // }
+
+    // nextStep = () => {
+    //     const { step } = this.state
+    //     this.setState({
+    //         step : step + 1
+    //     })
+    // }
+
+    // prevStep = () => {
+    //     const { step } = this.state
+    //     this.setState({
+    //         step : step - 1
+    //     })
+    // }
 
 
-    nextStep = () => {
-        const { step } = this.state
-        this.setState({
-            step : step + 1
-        })
-    }
-
-    prevStep = () => {
-        const { step } = this.state
-        this.setState({
-            step : step - 1
-        })
-    }
+    //   static getDerivedStateFromProps(nextProps, prevState){
+    //     if(nextProps.stateChange!==prevState.stateChange){
+    //         console.log('get derrived')
+    //         console.log(`${prevState.stateChange}`)
+    //         console.log(`${nextProps.stateChange}`)
+    //       return { step: nextProps.stateChange};
+    //    }
+    //    else return null;
+    //  }
 
     render() {
 
+        // should probs use a promise here
         const {step} = this.state
+        // const {step} = this.props.stateChange
+        console.log(`the step ids: ${step}`)
+
         switch (step) {
             case 1:
                 return <JobType />
@@ -44,15 +63,11 @@ class MasterForm extends Component {
                 return <Address />
             case 4:
                 return <Confirmation />
-
+            default:
+                return <p>Loading...</p>
         }
-        // return(
-        //     <div>
-        //     <h1>hello</h1>
-        //     </div>
-        // )
-    }
 
+    }
 
 }
 

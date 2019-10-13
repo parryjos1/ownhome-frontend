@@ -2,6 +2,22 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 import MasterForm from './form/MasterForm';
+import Navbar from '../Navbar/Navbar'
+import './PostJob.css';
+import 'typeface-roboto';
+import Stepper from './form/Stepper';
+
+//Multi-form elements
+import JobInfo from './form/JobInfo'
+import Description from './form/Description'
+import Address from './form/Address'
+import Confirmation from './form/Confirmation'
+
+// Ant design stepper
+import { Steps, Button } from 'antd';
+import 'antd/dist/antd.css';
+
+const { Step } = Steps;
 
 class PostJob extends Component {
 
@@ -9,23 +25,11 @@ class PostJob extends Component {
     super(props);
     this.state = {
       title: '',
-      category: '',
-      price: 0,
-      description: ''
+      description: '',
+      current: 0
     }
 
-
   } // end of constructor
-
-  onChangeTitle = (e) => {
-    this.setState({title: e.target.value})
-  }
-  onChangeCategory = (e) => {
-    this.setState({category: e.target.value})
-  }
-  onChangePrice = (e) => {
-    this.setState({price: e.target.value})
-  }
 
   onSubmit = () => {
 
@@ -33,7 +37,7 @@ class PostJob extends Component {
       title: this.state.title,
       category: this.state.category,
       price: this.state.price,
-      description: this.state.description
+      description: this.state.description,
     }
     axios.post('http://localhost:4000/jobs/new', body)
     .then(res => {
@@ -41,28 +45,92 @@ class PostJob extends Component {
     })
   }
 
+  onChange = current => {
+    console.log('onChange:', current);
+    this.setState({ current });
+  };
 
+  next() {
+    const current = this.state.current + 1;
+    this.setState({ current });
+  }
+
+  prev() {
+    const current = this.state.current - 1;
+    this.setState({ current });
+  }
+
+  handleInputChange = (e) => {
+    e.preventDefault();
+    console.log(e.target.name)
+    let name = e.target.name
+    this.setState({[name]: e.target.value})
+  }
+
+
+
+  renderSwitch(param) {
+    switch(param) {
+      case 0:
+          return <JobInfo change={this.handleInputChange} description={this.state.description} title={this.state.title} />
+      case 1:
+          return <Description />
+      case 2:
+          return <Address />
+      case 3:
+          return <Confirmation />
+      default:
+          return <p>Loading...</p>
+    }
+  }
 
 
   render(){
+
+    const { current } = this.state;
+    let navItems = {'About': '/about', 'How it works': '/how-it-works', 'Signup': '/signup'}
+
     return(
-      <div>
-        <nav>
-          <div><Link to="/">Home</Link></div>
-        </nav>
-        <h3>New a Job</h3>
+      <div className="post-job">
+        <Navbar navItems={ navItems }/>
 
-        <MasterForm />
+        <div className="new-job-form">
 
-        
+          <Steps current={this.state.current} size="small">
+            <Step title="Info"  />
+            <Step title="Details" />
+            <Step title="Done"  />
+          </Steps>
 
-      {/* <form onSubmit={this.onSubmit}>
-        <input type="text" placeholder="Title" onChange={this.onChangeTitle} />
-        <input type="text" placeholder="Category" onChange={this.onChangeCategory} />
-        <input type="text" placeholder="Price" onChange={this.onChangePrice} />
-        <input type="text" placeholder="Description" onChange={this.onChangePrice} />
-        <input type="submit" />
-      </form> */}
+          <div className="new-job-form-ctn">
+
+
+            </div>
+              {this.renderSwitch(this.state.current)}
+            <div>
+
+
+          </div>
+
+<div className="steps-action">
+          {current < 2 && (
+            <Button type="primary" onClick={() => this.next()}>
+              Next
+            </Button>
+          )}
+          {current === 2 && (
+            <Button type="primary">
+              Done
+            </Button>
+          )}
+          {current > 0 && (
+            <Button style={{ marginLeft: 8 }} onClick={() => this.prev()}>
+              Previous
+            </Button>
+          )}
+        </div>
+
+        </div>
 
 
       </div>
