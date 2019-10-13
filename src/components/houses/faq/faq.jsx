@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
 import './faq.css';
 
+import { Collapse } from 'antd';
+
+const { Panel } = Collapse;
+
+const text = `
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+`
+
 class Faq extends Component {
 
     constructor() {
@@ -69,6 +79,19 @@ class Faq extends Component {
         return(
             <div className='faq-containter'>
                 <h1>Frequently Asked Questions</h1>
+
+                <Collapse accordion>
+    <Panel header="This is panel header 1" key="1">
+      <p>{text}</p>
+    </Panel>
+    <Panel header="This is panel header 2" key="2">
+      <p>{text}</p>
+    </Panel>
+    <Panel header="This is panel header 3" key="3">
+      <p>{text}</p>
+    </Panel>
+  </Collapse>
+
                 <div className='faq-table'>
                     <div className='faq-row'>
                         <div className='faq-question'>

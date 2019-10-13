@@ -11,11 +11,13 @@ import Stepper from './form/Stepper';
 import JobInfo from './form/JobInfo'
 import Description from './form/Description'
 import Address from './form/Address'
-import Confirmation from './form/Confirmation'
+import Confirmation from './form/Confirmation';
+import Success from './form/Success'
 
 // Ant design stepper
 import { Steps, Button } from 'antd';
 import 'antd/dist/antd.css';
+
 
 const { Step } = Steps;
 
@@ -24,31 +26,25 @@ class PostJob extends Component {
   constructor(props){
     super(props);
     this.state = {
+      service: '',
       title: '',
       description: '',
+      address: '',
       current: 0
     }
 
   } // end of constructor
 
-  onSubmit = () => {
+  componentDidMount() {
 
-    let body = {
-      title: this.state.title,
-      category: this.state.category,
-      price: this.state.price,
-      description: this.state.description,
-    }
-    axios.post('http://localhost:4000/jobs/new', body)
-    .then(res => {
-      console.log(res);
-    })
+    this.handleParentState();
+
   }
 
-  onChange = current => {
-    console.log('onChange:', current);
-    this.setState({ current });
-  };
+// Updates State of the Service
+  handleParentState = () => {
+    this.setState({service: this.props.location.state.job})
+  }
 
   next() {
     const current = this.state.current + 1;
@@ -60,6 +56,7 @@ class PostJob extends Component {
     this.setState({ current });
   }
 
+  // Updates parent state if child inputs change
   handleInputChange = (e) => {
     e.preventDefault();
     console.log(e.target.name)
@@ -67,18 +64,24 @@ class PostJob extends Component {
     this.setState({[name]: e.target.value})
   }
 
+// Button to advance to success page
+  onConfirmClick = (e) => {
+    e.preventDefault()
+    const current = this.state.current + 1;
+    this.setState({ current });
+  }
 
-
+// Switch statement to determine which page of multi-step form is rendered
   renderSwitch(param) {
     switch(param) {
       case 0:
-          return <JobInfo change={this.handleInputChange} description={this.state.description} title={this.state.title} />
+          return <JobInfo change={this.handleInputChange} description={this.state.description} title={this.state.title} job={this.props.location.state.job} />
       case 1:
-          return <Description />
+          return <Address change={this.handleInputChange} />
       case 2:
-          return <Address />
+          return <Confirmation details={this.state} />
       case 3:
-          return <Confirmation />
+          return <Success serverPost={this.postJob} details={this.state} />
       default:
           return <p>Loading...</p>
     }
@@ -119,8 +122,8 @@ class PostJob extends Component {
             </Button>
           )}
           {current === 2 && (
-            <Button type="primary">
-              Done
+            <Button type="primary" onClick={this.onConfirmClick}>
+              Confirm
             </Button>
           )}
           {current > 0 && (
@@ -131,7 +134,6 @@ class PostJob extends Component {
         </div>
 
         </div>
-
 
       </div>
     )

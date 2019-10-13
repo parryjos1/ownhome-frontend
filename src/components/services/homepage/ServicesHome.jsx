@@ -11,6 +11,12 @@ class ServicesHome extends Component {
         job: ''
     }
 
+    onChange = (e) => {
+        // e.preventDefault()
+        let data = e.target.value;
+        this.setState({job: data})
+    }
+
     handleSubmit = (e) => {
         e.preventDefault()
         console.log(e)
@@ -36,7 +42,7 @@ class ServicesHome extends Component {
                     <h1>Easiest way to hire tradies online</h1>
                     <h3>Free bids from accredited tradies in 1 minute</h3>
                     <form onSubmit={this.handleSubmit}>
-                        <input type="text" placeholder="What are you looking for?" />
+                        <input type="text" placeholder="What are you looking for?" onChange={this.onChange}/>
                         <input type="submit" value="Get Free Quotes" />
                     </form>  
                     <br />
@@ -46,10 +52,6 @@ class ServicesHome extends Component {
                     </div> 
                 </div>
 
-                
-                {/* <div className='book-service'>
-                    <button><Link to="/services/postjob">Post a job</Link></button>
-                </div> */}
 
                 <About />
                 <Work />
