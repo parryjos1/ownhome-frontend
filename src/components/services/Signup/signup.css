@@ -1,6 +1,6 @@
-.signup-form2 {
-    /* background-color: pink; */
+.signup-ctn {
     margin-top: 15vh;
     width: 90vw;
     margin-left: 5vw;
+    border: solid green 1px;
 }
