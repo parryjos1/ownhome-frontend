@@ -8,7 +8,7 @@ import {Form, Input, Tooltip, Icon, Cascader, Select, Row, Col, Checkbox, Button
 const { Option } = Select;
 const AutoCompleteOption = AutoComplete.Option;
 
-
+// Isn't this meant to be called UserSignup?
 class Signup extends Component {
 
     state = {

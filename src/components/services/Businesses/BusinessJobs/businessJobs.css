@@ -1,0 +1,10 @@
+.business-jobs-ctn {
+    margin: 20px;
+    text-align: center;
+    border: solid black 2px;
+}
+
+.business-jobs-ctn:hover {
+border: solid green 4px;
+font-weight: bold;
+}

@@ -5,8 +5,10 @@ import About from '../About/AboutOHS'
 import Work from '../how-it-works/WorksOHS'
 import './ServicesHome.css';
 
-class ServicesHome extends Component {
 
+
+class ServicesHome extends Component {
+    
     state = {
         job: ''
     }
@@ -32,7 +34,7 @@ class ServicesHome extends Component {
 
     render() {
 
-        let navItems = {'About': '/about', 'How it works': '/how-it-works', 'Signup': '/signup'}
+        let navItems = {'About': '/about', 'How it works': '/how-it-works', 'Login': '/login', 'Signup': '/signup'}
 
         return(
             <div>

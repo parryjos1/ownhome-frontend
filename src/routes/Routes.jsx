@@ -4,11 +4,15 @@ import {HashRouter as Router, Route} from 'react-router-dom';
 // import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 
 import Home from '../components/homepage';
-import Jobs from '../components/services/allJobs';
+import Jobs from '../components/services/Depreciated/allJobs';
 import PostJob from '../components/services/PostJob/PostJob'
-import Job from '../components/services/job'
-import ServicesHome from '../components/services/homepage/ServicesHome';
-import Signup from '../components/services/Signup/signup'
+import Job from '../components/services/Depreciated/job'
+import ServicesHome from '../components/services/Homepage/ServicesHome';
+import Signup from '../components/services/Signup/signup';
+import Login from '../components/services/Login/login';
+import BusinessJobs from '../components/services/Businesses/BusinessJobs/businessJobs';
+import JobBusiness from '../components/services/Jobs/JobBusiness/jobBusiness';
+import BusinessDashboard from '../components/services/Businesses/Dashboard_bus/businessDashboard';
 
 // import Parent from '../components/services/PassData/Parent';
 
@@ -22,8 +26,10 @@ const Routes = (
     <Route exact path="/services/jobs/:id" component={Job} />
     <Route exact path="/services" component={ServicesHome} />
     <Route exact path="/signup" component={Signup} />
-
-    {/* <Route exact path="/services/parent" component={Parent} /> */}
+    <Route exact path="/login" component={Login} />
+    <Route exact path="/services/businesses/dashboard/jobs" component={BusinessJobs} />
+    <Route exact path="/services/businesses/dashboard/jobs/:id" component={JobBusiness} />
+    <Route exact path="/services/businesses/dashboard" component={BusinessDashboard} />
 
   </Router>
 )
