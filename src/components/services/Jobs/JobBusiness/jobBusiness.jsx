@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
 import { Input } from 'antd';
+import { callExpression } from '@babel/types';
 const { Search } = Input;
 
 class JobBusiness extends Component {
@@ -39,12 +40,85 @@ class JobBusiness extends Component {
     }
 
     handleSearch = (value) => {
-        console.log(value)
-        // Add this tradies bid
-        // Add the bid amount and the id of the current user. shit... 
-        // send back JWT --> see what ID that is --> post it?
+
+        // 1) submit your bid on it
+        const id = this.props.match.params.id
+        const authToken = localStorage.getItem('token');
+        const price = parseFloat(value)
+
+        axios({
+            method: 'post',
+            url: `http://localhost:4000/business/jobs/${id}/bid`,
+            headers: { Authorization: "Bearer " + authToken },
+            data: {
+                "price": price,
+            }
+        })
+        .then(response => {
+            console.log(response)
+            this.setState({
+                jobs: response.data,
+                isLoading: false
+            })
+            
+        })
+        .catch(error => {
+            console.log(error)
+        })
+
+        // 2) redirect back to the dashboard (for now) Future --> back to the jobs board
+
+            this.props.history.push({
+            // pathname: '/searchlistings',
+            // pathname: `/services/businesses/dashboard/jobs/${jobId}`,
+            pathname: `/services/businesses/dashboard`,
+            // state: {
+            //     id: jobId
+            // }
+        })
 
     }
+
+    // const authToken = localStorage.getItem('token');
+    //     axios({
+    //         method: 'get',
+    //         url: 'http://localhost:4000/business/jobs',
+    //         headers: { Authorization: "Bearer " + authToken }
+    //         // data: {
+    //         // firstName: 'Finn',
+    //         // lastName: 'Williams'
+    //         // }
+    //     })
+    //     .then(response => {
+    //         // console.log(response)
+    //         this.setState({
+    //             jobs: response.data,
+    //             isLoading: false
+    //         })
+            
+    //     })
+    //     .catch(error => {
+    //         console.log(error)
+    //     })
+    // }
+
+    // handleClick = (id) => {
+
+        
+    //     let jobId = id
+    //     console.log(jobId)
+    //     this.props.history.push({
+    //         // pathname: '/searchlistings',
+    //         // pathname: `/services/businesses/dashboard/jobs/${jobId}`,
+    //         pathname: `/jobs/${jobId}`,
+    //         // state: {
+    //         //     id: jobId
+    //         // }
+    //     })
+    // }
+
+
+
 
     render() {
 
