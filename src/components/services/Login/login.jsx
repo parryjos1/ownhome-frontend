@@ -27,6 +27,15 @@ class Login extends Component {
         })
       }
 
+    handleUserRoute = (e) => {
+        this.props.history.push({
+            pathname: '/services/users/dashboard'
+            // state: {
+            //     // job: this.state.job
+            // }
+        })
+      }
+
     onUserClick = (e) => {
         e.preventDefault()
         this.setState({current: 0})
@@ -41,7 +50,7 @@ class Login extends Component {
   renderSwitch(param) {
     switch(param) {
       case 0:
-          return <LoginUser />
+          return <LoginUser reroute={this.handleUserRoute} />
       case 1:
           return <LoginBusiness reroute={this.handleBusinessRoute} />
       default:

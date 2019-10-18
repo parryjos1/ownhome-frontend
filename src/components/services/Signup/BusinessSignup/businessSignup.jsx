@@ -22,10 +22,26 @@ class BusinessSignup extends Component {
         e.preventDefault();
         this.props.form.validateFieldsAndScroll((err, values) => {
           if (!err) {
+            //Add business role / auth
+            values.role = "business"
+
+            // let body = {
+            //   email: values.email,
+            //   password: values.password,
+            //   confirm: values.confirm,
+            //   role: "business"
+            // }
+
+            // console.log(`The body is: ${body}`)
+            // console.log(body)
+
+            // console.log(values)
             console.log('Received values of form: ', values);
 
+
             // axios.post("http://localhost:4000/jobs/new", body, {
-            axios.post("http://localhost:4000/business/signup", values, {
+            // axios.post("http://localhost:4000/business/signup", values, {
+            axios.post("http://localhost:4000/users/signup", values, {
                 // headers: { Authorization: "Bearer " + authToken }
             })
             .then( () => console.log('New Item submitted'))

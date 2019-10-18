@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Form, Icon, Input, Button } from 'antd';
+import axios from 'axios';
 
 function hasErrors(fieldsError) {
     return Object.keys(fieldsError).some(field => fieldsError[field]);
@@ -16,7 +17,25 @@ class LoginUser extends Component {
         e.preventDefault();
         this.props.form.validateFields((err, values) => {
           if (!err) {
-            console.log('Received values of form: ', values);
+            // console.log('Received values of form: ', values);
+            let body = {
+              "email": values.username,
+              "password": values.password
+          }
+
+              axios.post("http://localhost:4000/users/login", body, {
+                  // headers: { Authorization: "Bearer " + authToken }
+              })
+              .then( res => {
+                  // console.log(res.data.token)
+                  localStorage.setItem('token', res.data.token); // write
+                  // localStorage.getItem('token') // read
+
+                  // Route to business dashboard
+                  this.props.reroute()
+
+              })
+              .catch(err => console.warn('SELL USER AJAX ERROR!', err) );
           }
         });
       };

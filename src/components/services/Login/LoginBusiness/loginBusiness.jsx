@@ -43,7 +43,8 @@ class LoginBusiness extends Component {
                 "password": values.password
             }
 
-                axios.post("http://localhost:4000/business/login", body, {
+                // axios.post("http://localhost:4000/business/login", body, {
+                axios.post("http://localhost:4000/users/login", body, {
                     // headers: { Authorization: "Bearer " + authToken }
                 })
                 .then( res => {

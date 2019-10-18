@@ -53,8 +53,9 @@ class Success extends Component {
                 description: this.state.description,
             }
 
+            const authToken = localStorage.getItem('token');
             axios.post("http://localhost:4000/jobs/new", body, {
-                // headers: { Authorization: "Bearer " + authToken }
+                headers: { Authorization: "Bearer " + authToken }
             })
             .then( res => {
                 console.log('New Item submitted', res);
@@ -67,6 +68,8 @@ class Success extends Component {
         }, 1200);
 
     }
+
+    
 
     handleParentState = () => {
         this.setState({title: this.props.details.title})

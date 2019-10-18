@@ -14,6 +14,9 @@ import BusinessJobs from '../components/services/Businesses/BusinessJobs/busines
 import JobBusiness from '../components/services/Jobs/JobBusiness/jobBusiness';
 import BusinessDashboard from '../components/services/Businesses/Dashboard_bus/businessDashboard';
 
+import UserDashboard from '../components/services/Users/UserDashboard/userDashboard'
+import JobUser from '../components/services/Jobs/UserJob/jobUser'
+
 // import Parent from '../components/services/PassData/Parent';
 
 const Routes = (
@@ -30,6 +33,9 @@ const Routes = (
     <Route exact path="/services/businesses/dashboard/jobs" component={BusinessJobs} />
     <Route exact path="/services/businesses/dashboard/jobs/:id" component={JobBusiness} />
     <Route exact path="/services/businesses/dashboard" component={BusinessDashboard} />
+
+    <Route exact path="/services/users/dashboard" component={UserDashboard} />
+    <Route exact path="/services/users/dashboard/jobs/:id" component={JobUser} />
 
   </Router>
 )
