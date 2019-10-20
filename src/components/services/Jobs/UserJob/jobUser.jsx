@@ -1,14 +1,24 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
+import './jobUser.css';
+
+import { Modal, Button, Checkbox } from 'antd';
+
+// const modal = Modal.info();
 
 class JobUser extends Component {
 
     state = {
         isLoading: true,
         job: null,
-        bids: null
+        bids: null,
+        visible: false, 
+        disabled: true,
+        modalKey: null,
+        modalValue: null
     }
+
 
     componentDidMount() {
 
@@ -41,6 +51,68 @@ class JobUser extends Component {
             console.log(error)
         })
     }
+
+    showModal(key, value) {
+
+        console.log('showModal')
+        console.log(key)
+        console.log(value)
+        this.setState({
+          visible: true,
+          modalKey: key.key,
+          modalValue: value.value
+
+        });
+
+      };
+    // showModal = (key, value) => {
+
+    //     console.log('showModal')
+    //     console.log(key)
+    //     console.log(value)
+    //     this.setState({
+    //       visible: true,
+    //     });
+
+    //   };
+    
+      handleOk = e => {
+        console.log(e);
+        // this.setState({
+        //   visible: false,
+        // });
+
+        // Make axios request to move the database
+
+        // redirect to dashboard
+
+        // send message / notification that's it's posted 
+
+
+      };
+    
+      handleCancel = e => {
+        console.log(e);
+        this.setState({
+          visible: false,
+        });
+      };
+
+    //   function onChange(e) {
+      onCheckboxChange = (e) => {
+        console.log(`checked = ${e.target.checked}`);
+        // this.setState({ disabled: false })
+
+        this.setState(prevState => ({
+            disabled: !prevState.disabled
+          }));
+
+      }
+
+    //   okButton = (e) => {
+    //       console.log('what doing brah?')
+    //         return JSON({disabled: this.state.disabled})
+    //   }
 
     // handleSearch = (value) => {
 
@@ -115,7 +187,7 @@ class JobUser extends Component {
                 } 
 
                 <div className="job-bids-container">
-                    <h4>The bidders are: </h4>
+                    <h4>The bidders are:</h4>
 
 
                    {
@@ -124,30 +196,58 @@ class JobUser extends Component {
                     // Object.keys(jobs).map(key => <Job key={key} body={jobs[key]} />) 
                     Object.entries(this.state.bids).map(([key,value])=>{
                         return (
-                            <div>{key} : {value}</div>
+                            <div className="bid-ctn">
+                                <div>{key} : {value}</div>
+                                {/* <button>Select as winner</button> */}
+
+                                {/* <Button type="primary" onClick={this.showModal} onClick={() => showModal({key}, {value})} > */}
+                                <Button type="primary"  onClick={() => this.showModal({key}, {value})} >
+                                    Select for job
+                                </Button>
+                        {/* <Modal
+                        title="Confirm ____ for job"
+                        visible={this.state.visible}
+                        onOk={this.handleOk}
+                        onCancel={this.handleCancel}
+                        okButtonProps={{ disabled: this.state.disabled }}
+                        cancelButtonProps={{ disabled: false }}
+                        centered={true}
+                        >
+                        <p>Some contents...</p>
+                        <p>Some contents...</p>
+                        <p>Some contents...</p>
+                        <p>{this.props.passedinProps}</p>
+                        <p>{key}</p>
+                        <p>{value}</p>
+                        <Checkbox onChange={this.onCheckboxChange}>Accept Terms and Conditions</Checkbox>
+                        </Modal> */}
+
+        
+
+                            </div>
                         );
                       })
 
-                    // this.state.job.bids.map( b => 
-                    // <div className="job-bids-ctn">
-                    //     <div>{b}</div>
-                    // </div>
-                    // )
-
-                    // {
-                    //     Object.keys(this.props.data).map(function(key,index) {
-                    //       return <li key={index}>{this.props.data[index]}</li>
-                    //     }, this)
-                    //   }
-
-                //     Object.keys(this.state.bids).map((key,index)=> {
-                //         // return <li key={index}>{this.props.data[key]}</li>
-                //         return <li key={index}>{this.state.bids[key]}</li>
-                //   })
-
                     :
                     <h3>Loading...</h3>
-                }    
+                }   
+
+                    <Modal
+                        title="Confirm ____ for job"
+                        visible={this.state.visible}
+                        onOk={this.handleOk}
+                        onCancel={this.handleCancel}
+                        okButtonProps={{ disabled: this.state.disabled }}
+                        cancelButtonProps={{ disabled: false }}
+                        centered={true}
+                        >
+                        <p>Some contents...</p>
+                        <p>Some contents...</p>
+                        <p>Some contents...</p>
+                        <p>{this.state.modalKey}</p>
+                        <p>{this.state.modalValue}</p>
+                        <Checkbox onChange={this.onCheckboxChange}>Accept Terms and Conditions</Checkbox>
+                    </Modal> 
 
             </div>
 
