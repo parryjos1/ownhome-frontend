@@ -9,9 +9,12 @@
     "@material-ui/icons": "^4.4.3",
     "acorn": "^7.0.0",
     "antd": "^3.23.6",
+    "assign-deep": "^1.0.1",
     "axios": "^0.19.0",
     "core-util-is": "^1.0.2",
     "gh-pages": "^2.1.1",
+    "node-sass": "^4.13.0",
+    "query-string": "^6.8.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-fade-in": "^0.1.6",
@@ -19,6 +22,7 @@
     "react-lottie": "^1.2.3",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
+    "react-stripe-elements": "^5.1.0",
     "typeface-roboto": "0.0.75"
   },
   "scripts": {

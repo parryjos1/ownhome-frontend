@@ -13,86 +13,64 @@ const text = `
 
 class Faq extends Component {
 
-    constructor() {
-        super()
-        this.state = {
-            'isHidden1': false,
-            'isHidden2': false,
-            'isHidden3': false,
-            'isHidden4': false,
-            'prevOpen': ''
-        }
-    }
+    // constructor() {
+    //     super()
+    //     this.state = {
+    //         'isHidden1': false,
+    //         'isHidden2': false,
+    //         'isHidden3': false,
+    //         'isHidden4': false,
+    //         'prevOpen': ''
+    //     }
+    // }
 
 
+    // buttonClick = (event) => {
+    //     const divToChange = event.target.id;
+    //     const prevOpenFaq = this.state.prevOpen;
 
-    buttonClick = (event) => {
-        const divToChange = event.target.id;
-        const prevOpenFaq = this.state.prevOpen;
+    //     console.log(`${divToChange} div to change`)
+    //     console.log(`${prevOpenFaq} prevOpenFaq`)
 
-        console.log(`${divToChange} div to change`)
-        console.log(`${prevOpenFaq} prevOpenFaq`)
+    //     // Close the previous open FAQ
+    //     this.setState(prevState => ({
+    //         [prevOpenFaq]: !prevState[prevOpenFaq]
+    //     }));
 
-        // Close the previous open FAQ
-        this.setState(prevState => ({
-            [prevOpenFaq]: !prevState[prevOpenFaq]
-        }));
+    //     // Open the new FAQ
+    //     this.setState(prevState => ({
+    //         [divToChange]: !prevState[divToChange]
+    //     }));
 
-        // Open the new FAQ
-        this.setState(prevState => ({
-            [divToChange]: !prevState[divToChange]
-        }));
+    //     // Update current open FAQ
+    //     this.setState({prevOpen: divToChange})
 
-        // Update current open FAQ
-        this.setState({prevOpen: divToChange})
-
-        // this.setState({prevOpen: divToChange})
-
-        // if (divToChange === prevOpenFaq) {
-
-        //     this.setState(prevState => ({
-        //         [divToChange]: !prevState[divToChange]
-        //     }));
-
-            
-        // } else {
-
-        //     // Close the previous open FAQ
-        //     this.setState(prevState => ({
-        //         [prevOpenFaq]: !prevState[prevOpenFaq]
-        //     }));
-    
-        //     // Open the new FAQ
-        //     this.setState(prevState => ({
-        //         [divToChange]: !prevState[divToChange]
-        //     }));
-    
-        //     // Update current open FAQ
-        //     // this.setState({prevOpen: divToChange})
-        // }
-
-
-    }
+    // }
 
 
     render() {
         return(
             <div className='faq-containter'>
-                <h1>Frequently Asked Questions</h1>
+                <h1>Most frequently asked questions</h1>
 
                 <Collapse accordion>
-    <Panel header="This is panel header 1" key="1">
-      <p>{text}</p>
-    </Panel>
-    <Panel header="This is panel header 2" key="2">
-      <p>{text}</p>
-    </Panel>
-    <Panel header="This is panel header 3" key="3">
-      <p>{text}</p>
-    </Panel>
-  </Collapse>
+                    <Panel header="This is panel header 1" key="1">
+                    <p>{text}</p>
+                    </Panel>
+                    <Panel header="This is panel header 2" key="2">
+                    <p>{text}</p>
+                    </Panel>
+                    <Panel header="This is panel header 3" key="3">
+                    <p>{text}</p>
+                    </Panel>
+                </Collapse>
 
-                <div className='faq-table'>
+
+
+
+
+                {/* My own FAQ Table - Depreciated */}
+                {/* <div className='faq-table'>
                     <div className='faq-row'>
                         <div className='faq-question'>
                             <h3>What is OwnHome</h3>
@@ -161,7 +139,7 @@ class Faq extends Component {
                         }
                     </div>
 
-                </div>
+                </div> */}
 
 
             </div>

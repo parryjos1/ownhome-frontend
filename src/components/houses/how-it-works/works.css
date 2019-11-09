@@ -1,0 +1,18 @@
+
+.how-it-works-ctn {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.how-it-works-item {
+
+}
+
+.hiw-card-img{
+    width: 5vw;
+    height: 5vh;
+}

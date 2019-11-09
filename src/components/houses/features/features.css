@@ -1,0 +1,14 @@
+
+.feature-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 300px; */
+}
+
+.feature-card-img {
+    width: 10vw;
+    height: 10vh;
+}

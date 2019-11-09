@@ -6,6 +6,9 @@ import axios from 'axios'
 import {Form, Input, Tooltip, Icon, Cascader, Select, Row, Col, Checkbox, Button, AutoComplete,} from 'antd';
 import { Route, Link } from 'react-router-dom';
 
+// import StripeButton from '../../../../../public/images/stripe/blue-on-light@2x.png';
+// import StripeButton from './images/stripe/blue-on-light@2x.png';
+
 
 const { Option } = Select;
 const AutoCompleteOption = AutoComplete.Option;
@@ -90,6 +93,11 @@ class BusinessSignup extends Component {
         }
         this.setState({ autoCompleteResult });
       };
+
+
+      // stripeButtonClick = () => {
+      //   //1) Make a call to the backend 
+      // }
 
     render() {
 
@@ -210,6 +218,8 @@ class BusinessSignup extends Component {
           </Button>
         </Form.Item>
       </Form>
+
+      <img src={'./images/stripe/blue-on-light.png'} alt='Stripe button' onClick={this.stripeButtonClick} />
       </div>
 
             </div>

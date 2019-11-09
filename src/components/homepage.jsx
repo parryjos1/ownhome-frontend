@@ -1,21 +1,29 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import './homepage.css';
-import  Nav from './nav/nav.jsx';
-import Faq from './houses/faq/faq.jsx';
-import About from './houses/about/about.jsx';
-import Works from './houses/how-it-works/works.jsx';
+import Navbar from './services/Navbar/Navbar'
+import Features from './houses/features/features';
+import Better from './houses/better/better';
+import Works from './houses/how-it-works/works';
+import Faq from './houses/faq/faq';
+import What from './houses/what/what'
+import FinalSignup from './houses/final-signup/finalSignup';
 
 class Homepage extends Component {
 
 
     render() {
 
+        let navItems = {'Features': '/about', 'How it works': '/how-it-works', 'FAQs': '/login', 'Join Waitlist': '/signup'}
+
         return(
             <div>
-                <Nav />
+                {/* <Nav /> */}
+            <Navbar navItems={ navItems }/>
+
 
                 <div className='home-container'>
+                    
 
                     <div className='home-title'>
                     {/* <h1>OwnHome</h1> */}
@@ -24,7 +32,16 @@ class Homepage extends Component {
                         {/* <h1>House Prices are cooked</h1> */}
                         {/* <h1>House Prices are F#$%ed. We've got a fix.</h1> */}
                         <h1>House Prices are F#$%ed.</h1>
-                        <h3>OwnHome is getting people on the housing ladder with our innovative solution</h3>
+                        {/* <h1>Home ownership feeling out of reach</h1> */}
+                        {/* Image of someone reaching for a ladder */}
+                        {/* <h3>OwnHome is getting people on the housing ladder with our innovative solution</h3> */}
+                        {/* <h3>Pioneering a new, better path to home ownership</h3> */}
+                        <h3>A better, affordable path to home ownership launching soon</h3>
+
+                        {/* <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> */}
+
+                            <img className='home-Image' src={'./images/Frontpage/house.svg'} alt='house-image'  />
+
 
                             {/* <h2>Actually have a chance to own a home Australia</h2> */}
                             {/* <h2>House Prices are F#%$ed. We're solving this.</h2> */}
@@ -35,11 +52,11 @@ class Homepage extends Component {
                             {/* <p>revolutionary new way to afford a home</p> */}
                     </div>
 
-                    <div className='home-video'>
+                    {/* <div className='home-video'>
                         <iframe className='landing-page-explainer-video'
                             src="https://www.youtube.com/embed/tgbNymZ7vqY">
                         </iframe>
-                    </div>
+                    </div> */}
 
                     <div className='home-signup'>
                         <form className='signup-form' >
@@ -50,15 +67,19 @@ class Homepage extends Component {
                     </div>
 
 
-
-
                 </div>
-                <About />
-                <Works />
-                <Faq />
+
+
+                    <What />
+                    <Features />
+                    <Better /> 
+                    <Works />
+                    <Faq />
+                    <FinalSignup />
             </div>
         )
     }
 }
 
 export default Homepage
+

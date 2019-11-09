@@ -77,16 +77,20 @@ class JobUser extends Component {
     //   };
     
       handleOk = e => {
-        console.log(e);
-        // this.setState({
-        //   visible: false,
-        // });
+        // Direct to the payment page & pass the props --> user, business & amount
 
-        // Make axios request to move the database
+        let jobId = this.props.match.params.id
+        let business = this.state.modalKey
+        let amount = this.state.modalValue
 
-        // redirect to dashboard
-
-        // send message / notification that's it's posted 
+        // Proceed to checkout
+        this.props.history.push({
+            // pathname: '/searchlistings',
+            pathname: `/services/users/dashboard/jobs/${jobId}/checkout`,
+            state: {
+                business, amount, jobId
+            }
+        })
 
 
       };
@@ -95,6 +99,8 @@ class JobUser extends Component {
         console.log(e);
         this.setState({
           visible: false,
+          modalKey: null,
+          modalValue: null
         });
       };
 

@@ -7,7 +7,7 @@ const nav = props => (
     <header className="nav">
         <nav className="navbar_navigation">
             {/* <div className="nav-logo"><a href="/">THE LOGO</a></div> */}
-            <div className="nav-logo"><Link to="/">THE LOGO</Link></div>
+            <div className="nav-logo"><Link to="/">OwnHome</Link></div>
             {/* spacer takes all the available space */}
             <div className="spacer"></div>
             <div className="nav-items">

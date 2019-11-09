@@ -17,6 +17,12 @@ import BusinessDashboard from '../components/services/Businesses/Dashboard_bus/b
 import UserDashboard from '../components/services/Users/UserDashboard/userDashboard'
 import JobUser from '../components/services/Jobs/UserJob/jobUser'
 
+import Payments from '../components/services/Depreciated - Payments/payments'
+import CreateStripeAccount from '../components/services/Signup/BusinessSignup/createStripeAccount'
+import ConfirmExpressAccount from '../components/services/Signup/BusinessSignup/confirmExpressAccount'
+
+import Checkout from '../components/services/Checkout/Checkout'
+
 // import Parent from '../components/services/PassData/Parent';
 
 const Routes = (
@@ -33,9 +39,14 @@ const Routes = (
     <Route exact path="/services/businesses/dashboard/jobs" component={BusinessJobs} />
     <Route exact path="/services/businesses/dashboard/jobs/:id" component={JobBusiness} />
     <Route exact path="/services/businesses/dashboard" component={BusinessDashboard} />
+    <Route exact path="/services/businesses/signup/stripe" component={CreateStripeAccount} />
+    <Route exact path="/services/businesses/signup/stripe/confirm" component={ConfirmExpressAccount} />
 
     <Route exact path="/services/users/dashboard" component={UserDashboard} />
     <Route exact path="/services/users/dashboard/jobs/:id" component={JobUser} />
+    <Route exact path="/services/users/dashboard/jobs/:id/checkout" component={Checkout} />
+
+    <Route exact path="/services/businesses/dashboard/payment" component={Payments} />
 
   </Router>
 )

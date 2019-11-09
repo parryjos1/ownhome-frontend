@@ -1,0 +1,15 @@
+
+.better-containter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.better-ctn-item {
+    display: flex;
+}
+
+.better-card-img {
+    width: 3vw;
+    height: 3vh;
+}
