@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import './homepage.css';
-import Navbar from './services/Navbar/Navbar'
+import Navbar from './houses/Navbar-Homepage/Navbar';
 import Features from './houses/features/features';
 import Better from './houses/better/better';
 import Works from './houses/how-it-works/works';
 import Faq from './houses/faq/faq';
 import What from './houses/what/what'
 import FinalSignup from './houses/final-signup/finalSignup';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 class Homepage extends Component {
 
 
     render() {
 
-        let navItems = {'Features': '/about', 'How it works': '/how-it-works', 'FAQs': '/login', 'Join Waitlist': '/signup'}
+        let navItems = {'Features': '/features', 'How it works': '/how-it-works', 'FAQs': '/faq', 'Join Waitlist': '/signup'}
 
         return(
             <div>
@@ -31,7 +32,11 @@ class Homepage extends Component {
                     {/* <h2>House prices are F#%$ed. We've got a fix.</h2> */}
                         {/* <h1>House Prices are cooked</h1> */}
                         {/* <h1>House Prices are F#$%ed. We've got a fix.</h1> */}
-                        <h1>House Prices are F#$%ed.</h1>
+                        <Element name="/home" className="element">
+                            {/* <h1>House Prices are F#$%ed.</h1> */}
+                            {/* <h1>Reviving the home ownership dream</h1> */}
+                            <h1>Home ownership within reach</h1>
+                        </Element>
                         {/* <h1>Home ownership feeling out of reach</h1> */}
                         {/* Image of someone reaching for a ladder */}
                         {/* <h3>OwnHome is getting people on the housing ladder with our innovative solution</h3> */}
@@ -71,11 +76,26 @@ class Homepage extends Component {
 
 
                     <What />
-                    <Features />
+
+                    <Element name="/features" className="element">
+                        <Features />
+                    </Element>
+
                     <Better /> 
-                    <Works />
-                    <Faq />
+
+                    <Element name="/how-it-works" className="element">
+                        <Works />
+                    </Element>
+
+                    <Element name="/faq" className="element">
+                        <Faq />
+                    </Element>
+
                     <FinalSignup />
+
+
+
+
             </div>
         )
     }

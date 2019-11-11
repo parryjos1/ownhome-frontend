@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Elements, StripeProvider} from 'react-stripe-elements';
 import CheckoutForm from './CheckoutForm';
-import './Checkout.css';
+// import './Checkout.css';
 
 class Checkout extends Component {
 
