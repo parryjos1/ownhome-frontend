@@ -9,7 +9,7 @@ class FinalSignup extends Component {
         return(
             <div className="final-signup-ctn">
                 <div className="final-signup-item">
-                    <h1>Launching soon! Keep in the loop</h1>
+                    <h1>Be the first to know when we launch!</h1>
 
                     <div className='final-signup'>
                             <form className='final-signup-form' >

@@ -1,8 +1,38 @@
+@import "../../Fonts/Recoleta/MyFontsWebfontsKit.css";
+
 .what-container {
-    padding-left: 20vw;
-    padding-right: 20vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-bottom: 10vh;
     text-align: center;
 
     font-size: 50px;
 
+}
+
+.what-container h1 {
+    font-family: 'Recoleta-Black';
+    font-size: 6vw;
+}
+
+.what-container h3 {
+    font-family: 'Recoleta-Medium';
+}
+
+.what-ctn-item {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.what-card-img {
+    width: 25vw;
+    height: 25vh;
+}
+
+.what-card-text {
+    /* width: 600px; */
+    width: 42vw;
 }

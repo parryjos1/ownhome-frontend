@@ -1,3 +1,5 @@
+@import "../../../Fonts/Recoleta/MyFontsWebfontsKit.css";
+
 .nav {
     width: 100%;
     background-color: #a8eef4;
@@ -16,6 +18,7 @@
 
 .nav-logo {
     margin-left: 1rem;
+    font-family: 'Recoleta-Black';
 }
 
 .nav-logo a {
@@ -27,6 +30,9 @@
 .nav-items a {
     color: #4a4a4a;
     text-decoration: none;
+    /* font-family: 'Recoleta-Bold'; */
+    font-family: 'Recoleta-Medium';
+    font-size: 30px;
 }
 
 .spacer {

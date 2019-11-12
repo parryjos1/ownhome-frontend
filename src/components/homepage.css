@@ -1,4 +1,27 @@
 
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+
+/* @import "/public/Fonts/Recoleta/MyFontsWebfontsKit/MyFontsWebfontsKit.css"; */
+@import "MyFontsWebfontsKit/MyFontsWebfontsKit.css";
+
+/* 
+.light {
+    font-family: 'Recoleta-Light';
+}
+.thin {
+    font-family: 'Recoleta-Thin';
+}
+.medium {
+    font-family: 'Recoleta-Medium';
+}
+.bold {
+    font-family: 'Recoleta-Bold';
+}
+.black {
+    font-family: 'Recoleta-Black';
+} */
+
 
 .home-container {
     background-color: #a8eef4;
@@ -6,6 +29,11 @@
     margin-top: 10vh;
     height: 90vh;
     text-align: center;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    /* font-family: 'Recoleta-Black'; */
+    /* font-family: 'Recoleta-Bold'; */
+    /* font-weight: black; */
+    /* font-family: 'PT Sans', sans-serif; */
 }
 
 .home-title {
@@ -16,8 +44,22 @@
 }
 
 .home-title h1 {
-    font-size: 60px;
+    /* font-size: 60px; */
+    font-size: 5vw;
     padding-top: 2vh;
+    font-family: 'Recoleta-Black';
+    /* font-weight: bold; */
+    /* font-family: 'Recoleta-Bold'; */
+}
+
+.home-subheading {
+    font-family: 'Recoleta-Medium';
+    font-size: 2vw;
+}
+
+.home-Image {
+    width: 40vw;
+    height: 40vh;
 }
 
 .home-video {
@@ -34,8 +76,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 40vw;
-    margin-left: 30vw;
+    width: 60vw;
+    margin-left: 20vw;
+    font-family: 'Recoleta-Medium';
+    font-color: #4a4a4a;
 }
 
 .signup-input {
@@ -46,9 +90,20 @@
     flex: 2 1 60%;
     font-size: 20px; 
     border-radius: 10px;
-    border: solid gray 1px;
+    /* border: solid gray 1px; */
+    border: none;
     padding-left: 1vw;
+    font-size: 2vw;
+    -webkit-box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
+    outline: none;
+}
 
+.signup-input:focus {
+
+    /* box-shadow: 0 0 5px #ea4756;
+    border: 1px solid #ea4756; */
 }
 
 .signup-btn {
@@ -61,11 +116,78 @@
     font-size: 20px;  
     border-radius: 10px;
     border: none;
-    background-color: #ea4756
+    background-color: #ea4756;
+    font-family: 'Recoleta-Bold';
+    font-size: 2.5vw;
+    cursor: pointer;
+    /* -webkit-box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75); */
+    -webkit-box-shadow: -0.5px 1px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -0.5px 1px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: -0.5px 1px 10px 0px rgba(0,0,0,0.75);
 
+    /* text-decoration: none; */
+	/* color: white; */
+	/* padding: 10px 30px; */
+	/* display: inline-block; */
+	/* position: relative; */
+	border: 1px solid rgba(0,0,0,0.21);
+	border-bottom: 4px solid rgba(0,0,0,0.21);
+	border-radius: 4px;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+
+    /* background: rgba(250,90,90,1); */
+    background: #ea4756;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#ea4756), to(rgba(232,81,81,1)));
+	background: -webkit-linear-gradient(#ea4756 0%, rgba(232,81,81,1) 100%);
+	background: -moz-linear-gradient(#ea4756 0%, rgba(232,81,81,1) 100%);
+	background: -o-linear-gradient(#ea4756 0%, rgba(232,81,81,1) 100%);
+	background: linear-gradient(#ea4756 0%, rgba(232,81,81,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa5a5a', endColorstr='#e85151', GradientType=0 );
 }
 
-.home-Image {
-    width: 30vw;
-    height: 30vh;
+/* Signup button hover effect  */
+.signup-btn:hover{
+    box-shadow:0px 10px 10px rgba(0,0,0,0.2);
+    transform : translateY(-3px);
 }
+
+.signup-btn:active{
+    box-shadow:0px 5px 10px rgba(0,0,0,0.2);
+    transform:translateY(-1px);
+}
+
+.signup-btn{
+    animation:comeFromBottom 1s ease-out .8s;
+}
+
+.signup-btn::after{
+    content:"";
+    text-decoration: none;
+    text-transform:uppercase;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    border-radius:100px;
+    display:inline-block;
+    z-index:-1;
+    transition: all .5s;
+}
+
+.signup-btn::after {
+    /* background: #fff; */
+    background: #ea4756;
+}
+
+.signup-btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+
+
+
+

@@ -1,14 +1,26 @@
+@import "../../Fonts/Recoleta/MyFontsWebfontsKit.css";
 
 .feature-container{
     display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
     justify-content: space-around;
     align-items: center;
     /* margin: 300px; */
 }
 
+.feature-ctn-item{
+    /* border: solid grey 1px; */
+}
+
 .feature-card-img {
     width: 10vw;
     height: 10vh;
+}
+
+#features-heading{
+    font-family: 'Recoleta-Bold';
+    text-align: center;
+    /* font-size: 2rem; */
+    font-size: 4vw;
 }

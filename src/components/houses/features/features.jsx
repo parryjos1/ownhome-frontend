@@ -8,29 +8,30 @@ class Features extends Component {
 
         return(
             <div>
-                <h1>Key Features</h1>
+                <h1 id="features-heading">Best key features</h1>
 
                 <div className='feature-container'>
 
-                        <div>
+                        <div className="feature-ctn-item">
                             <img className="feature-card-img" src={"./images/Frontpage/hand.svg"} />
-                            <h1>Feature Title</h1>
-                            <p>explainer section on why the feature is so good</p>
+                            <h1>No Deposit.</h1>
+                            {/* <h1>No Downpayment</h1> */}
+                            <p>The average deposit now takes 10 years to save. Don't wait around paying dead money. Move into your home from day 1.</p>
                         </div>
-                        <div>
+                        <div className="feature-ctn-item">
                             <img className="feature-card-img" src={"./images/Frontpage/hand.svg"} />
-                            <h1>Feature Title</h1>
-                            <p>explainer section on why the feature is so good</p>
+                            <h1>Choose your home.</h1>
+                            <p>You choose the home you want to live in, we handly the purchase. We even split the costs!</p>
                         </div>
-                        <div>
+                        <div className="feature-ctn-item">
                             <img className="feature-card-img" src={"./images/Frontpage/hand.svg"} />
-                            <h1>Feature Title</h1>
-                            <p>explainer section on why the feature is so good</p>
+                            <h1>Build up wealth.</h1>
+                            <p>Start building up wealth from the first day you move in.</p>
                         </div>
-                        <div>
+                        <div className="feature-ctn-item">
                             <img className="feature-card-img" src={"./images/Frontpage/hand.svg"} />
-                            <h1>Feature Title</h1>
-                            <p>explainer section on why the feature is so good</p>
+                            <h1>Make it your own.</h1>
+                            <p>You have the freedom to paint the walls, change the carpet or get a pet. It's your home!</p>
                         </div>
 
                 </div>

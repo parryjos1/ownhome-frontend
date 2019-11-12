@@ -15,7 +15,8 @@ class Homepage extends Component {
 
     render() {
 
-        let navItems = {'Features': '/features', 'How it works': '/how-it-works', 'FAQs': '/faq', 'Join Waitlist': '/signup'}
+        // let navItems = {'Features': '/features', 'How it works': '/how-it-works', 'FAQs': '/faq', 'Join Waitlist': '/signup'}
+        let navItems = {'Features': '/features', 'How it works': '/how-it-works', 'FAQs': '/faq', 'Join Waitlist': '/home'}
 
         return(
             <div>
@@ -41,7 +42,7 @@ class Homepage extends Component {
                         {/* Image of someone reaching for a ladder */}
                         {/* <h3>OwnHome is getting people on the housing ladder with our innovative solution</h3> */}
                         {/* <h3>Pioneering a new, better path to home ownership</h3> */}
-                        <h3>A better, affordable path to home ownership launching soon</h3>
+                        <h3 className="home-subheading">A better, affordable path to home ownership launching soon</h3>
 
                         {/* <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> */}
 
@@ -55,6 +56,7 @@ class Homepage extends Component {
                             {/* <p>Owning a house in australia has become impossible. We're flipping the model to give everyone a chance </p> */}
                             {/* <p>Flipping home ownership on its head to give everyone the chance to afford to own a home. Launching soon</p> */}
                             {/* <p>revolutionary new way to afford a home</p> */}
+
                     </div>
 
                     {/* <div className='home-video'>
@@ -63,13 +65,16 @@ class Homepage extends Component {
                         </iframe>
                     </div> */}
 
-                    <div className='home-signup'>
-                        <form className='signup-form' >
-                            <input type='text'  className='signup-input' placeholder='Enter email address' />
-                            <button className='signup-btn'>Join Waitlist</button>
-                        </form>
+                    {/* <Element name="/signup" className="element"> */}
+                        <div className='home-signup'>
+                            <form className='signup-form' >
+                                <input type='text'  className='signup-input' placeholder='Enter email address' />
+                                <button className='signup-btn'>Join Waitlist</button>
+                            </form>
 
-                    </div>
+                        </div>
+                    {/* </Element> */}
+
 
 
                 </div>
@@ -92,6 +97,10 @@ class Homepage extends Component {
                     </Element>
 
                     <FinalSignup />
+
+
+
+
 
 
 
