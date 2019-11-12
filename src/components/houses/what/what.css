@@ -1,6 +1,6 @@
 @import "../../Fonts/Recoleta/MyFontsWebfontsKit.css";
 
-.what-container {
+/* .what-container {
     padding-left: 15vw;
     padding-right: 15vw;
     padding-bottom: 10vh;
@@ -24,7 +24,6 @@
 .what-ctn-item {
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
     justify-content: space-around;
     align-items: center;
 }
@@ -35,6 +34,5 @@
 }
 
 .what-card-text {
-    /* width: 600px; */
     width: 42vw;
-}
+} */

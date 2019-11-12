@@ -79,7 +79,7 @@ class Homepage extends Component {
 
                 </div>
 
-                    {/* <What /> */}
+                    <What />
 
                     <Element name="/features" className="element">
                         <Features />
