@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ownhome-frontend/static/css/main.1d78c8e0.chunk.css",
+    "main.css": "/ownhome-frontend/static/css/main.f27d6b37.chunk.css",
     "main.js": "/ownhome-frontend/static/js/main.3b7d427c.chunk.js",
     "main.js.map": "/ownhome-frontend/static/js/main.3b7d427c.chunk.js.map",
     "runtime~main.js": "/ownhome-frontend/static/js/runtime~main.547555a2.js",
@@ -9,10 +9,10 @@
     "static/js/2.55fca42e.chunk.js": "/ownhome-frontend/static/js/2.55fca42e.chunk.js",
     "static/js/2.55fca42e.chunk.js.map": "/ownhome-frontend/static/js/2.55fca42e.chunk.js.map",
     "index.html": "/ownhome-frontend/index.html",
-    "precache-manifest.263993176b24a5ddf4ca487d082e490d.js": "/ownhome-frontend/precache-manifest.263993176b24a5ddf4ca487d082e490d.js",
+    "precache-manifest.3f129d02ab88b4bb5bf4e16479d6317d.js": "/ownhome-frontend/precache-manifest.3f129d02ab88b4bb5bf4e16479d6317d.js",
     "service-worker.js": "/ownhome-frontend/service-worker.js",
     "static/css/2.0ab28d86.chunk.css.map": "/ownhome-frontend/static/css/2.0ab28d86.chunk.css.map",
-    "static/css/main.1d78c8e0.chunk.css.map": "/ownhome-frontend/static/css/main.1d78c8e0.chunk.css.map",
+    "static/css/main.f27d6b37.chunk.css.map": "/ownhome-frontend/static/css/main.f27d6b37.chunk.css.map",
     "static/media/what.css": "/ownhome-frontend/static/media/3A87BE_7_0.e1e5e89e.woff2",
     "static/media/index.css": "/ownhome-frontend/static/media/roboto-latin-900italic.ebf6d164.woff2"
   }
