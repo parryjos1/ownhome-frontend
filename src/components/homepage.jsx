@@ -79,10 +79,9 @@ class Homepage extends Component {
 
                 </div>
 
-
                     <What />
 
-                    <Element name="/features" className="element">
+                    {/* <Element name="/features" className="element">
                         <Features />
                     </Element>
 
@@ -96,7 +95,7 @@ class Homepage extends Component {
                         <Faq />
                     </Element>
 
-                    <FinalSignup />
+                    <FinalSignup /> */}
 
 
 

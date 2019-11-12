@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 
 /* @import "/public/Fonts/Recoleta/MyFontsWebfontsKit/MyFontsWebfontsKit.css"; */
-@import "MyFontsWebfontsKit/MyFontsWebfontsKit.css";
+@import "Fonts/Recoleta/MyFontsWebfontsKit.css";
+/* @import "MyFontsWebfontsKit.css"; */
 
 /* 
 .light {
@@ -29,6 +30,10 @@
     margin-top: 10vh;
     height: 90vh;
     text-align: center;
+    /* position: inherit; */
+    position: static;
+
+    /* position: static; */
     /* font-family: 'Source Sans Pro', sans-serif; */
     /* font-family: 'Recoleta-Black'; */
     /* font-family: 'Recoleta-Bold'; */
@@ -178,7 +183,6 @@
 }
 
 .signup-btn::after {
-    /* background: #fff; */
     background: #ea4756;
 }
 
@@ -186,6 +190,17 @@
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
+
+/* @media ( max-width: 450px) {
+
+    .home-container {
+        margin-top: 10vh;
+        height: 138vh;
+        width: 138vw;
+        text-align: center;
+    }
+
+} */
 
 
 
