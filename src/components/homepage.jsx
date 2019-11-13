@@ -91,11 +91,11 @@ class Homepage extends Component {
                         <Works />
                     </Element> 
 
-                    {/* <Element name="/faq" className="element">
+                    <Element name="/faq" className="element">
                         <Faq />
                     </Element>
 
-                    <FinalSignup /> */}
+                    <FinalSignup />
 
 
 
