@@ -2,7 +2,7 @@
   "name": "ownhome-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://parryjos1.github.io/ownhome-frontend",
+  "homepage": "https://www.ourownhome.com.au",
   "dependencies": {
     "@bit/primefaces.primereact.autocomplete": "^3.1.8",
     "@material-ui/core": "^4.5.0",
