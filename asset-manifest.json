@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/ownhome-frontend/static/css/main.c8365b46.chunk.css",
-    "main.js": "/ownhome-frontend/static/js/main.b8bb6871.chunk.js",
-    "main.js.map": "/ownhome-frontend/static/js/main.b8bb6871.chunk.js.map",
-    "runtime~main.js": "/ownhome-frontend/static/js/runtime~main.547555a2.js",
-    "runtime~main.js.map": "/ownhome-frontend/static/js/runtime~main.547555a2.js.map",
-    "static/css/2.0ab28d86.chunk.css": "/ownhome-frontend/static/css/2.0ab28d86.chunk.css",
-    "static/js/2.089be71f.chunk.js": "/ownhome-frontend/static/js/2.089be71f.chunk.js",
-    "static/js/2.089be71f.chunk.js.map": "/ownhome-frontend/static/js/2.089be71f.chunk.js.map",
-    "index.html": "/ownhome-frontend/index.html",
-    "precache-manifest.ff13a02f83df7adeea0d03eb98858313.js": "/ownhome-frontend/precache-manifest.ff13a02f83df7adeea0d03eb98858313.js",
-    "service-worker.js": "/ownhome-frontend/service-worker.js",
-    "static/css/2.0ab28d86.chunk.css.map": "/ownhome-frontend/static/css/2.0ab28d86.chunk.css.map",
-    "static/css/main.c8365b46.chunk.css.map": "/ownhome-frontend/static/css/main.c8365b46.chunk.css.map",
-    "static/media/what.css": "/ownhome-frontend/static/media/3A87BE_7_0.e1e5e89e.woff2",
-    "static/media/index.css": "/ownhome-frontend/static/media/roboto-latin-900italic.ebf6d164.woff2"
+    "main.css": "/static/css/main.81f2c793.chunk.css",
+    "main.js": "/static/js/main.f2dbb344.chunk.js",
+    "main.js.map": "/static/js/main.f2dbb344.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.c7b2cd7e.chunk.css": "/static/css/2.c7b2cd7e.chunk.css",
+    "static/js/2.40e4e59a.chunk.js": "/static/js/2.40e4e59a.chunk.js",
+    "static/js/2.40e4e59a.chunk.js.map": "/static/js/2.40e4e59a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.c3473a9cd64bbd41bfde500fee782558.js": "/precache-manifest.c3473a9cd64bbd41bfde500fee782558.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.c7b2cd7e.chunk.css.map": "/static/css/2.c7b2cd7e.chunk.css.map",
+    "static/css/main.81f2c793.chunk.css.map": "/static/css/main.81f2c793.chunk.css.map",
+    "static/media/what.css": "/static/media/3A87BE_7_0.e1e5e89e.woff2",
+    "static/media/index.css": "/static/media/roboto-latin-900italic.ebf6d164.woff2"
   }
 }
