@@ -1,8 +1,31 @@
+@import "../../Fonts/Recoleta/MyFontsWebfontsKit.css";
 
-.better-containter {
+.better-container {
+    width: 80vw;
+    margin-left: 10vw;
+    /* text-align: center; */
+}
+
+.better-items-ctn {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+#better-title {
+    font-family: 'Recoleta-Black';
+    text-align: center;
+    font-size: 5vw;
+}
+
+.better-items-ctn h2 {
+    font-family: 'Recoleta-Black';
+    font-size: 3vw;
+}
+
+.better-items-ctn p {
+    font-family: 'Recoleta-Light';
+    font-size: 2vw;
 }
 
 .better-ctn-item {
@@ -12,4 +35,70 @@
 .better-card-img {
     width: 3vw;
     height: 3vh;
+}
+
+.better-OwnHome {
+    padding-left: 30px;
+
+}
+
+.better-Rent-Saving {
+    padding-left: 30px;
+
+}
+
+
+
+
+@media ( max-width: 450px) {
+
+    .better-container {
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+    .better-items-ctn {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #better-title {
+        font-size: 10vw;
+    }
+
+
+
+    .better-items-ctn h2 {
+        font-size: 6vw;
+    }
+    
+    .better-items-ctn p {
+        font-size: 4vw;
+        margin-top: 11px;
+        padding-left: 10px;
+
+    }
+    
+    .better-ctn-item {
+        text-align: center;
+    }
+    
+    .better-card-img {
+        width: 6vw;
+        height: 6vh;
+    }
+
+    .better-OwnHome {
+        padding-left: 0px;
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+    
+    .better-Rent-Saving {
+        padding-left: 0px;
+        width: 100%;
+    }
+
+
+
 }

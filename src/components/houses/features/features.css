@@ -1,16 +1,27 @@
 @import "../../Fonts/Recoleta/MyFontsWebfontsKit.css";
 
-.feature-container{
-    display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: column; */
-    justify-content: space-around;
-    align-items: center;
-    /* margin: 300px; */
+.features-container {
+    width: 70vw;
+    margin-left: 15vw;
 }
 
-.feature-ctn-item{
-    /* border: solid grey 1px; */
+.feature-items-ctn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.feature-items{
+    
+}
+
+.feature-items h1 {
+    font-family: 'Recoleta-Bold';
+}
+.feature-items p {
+    width: 250px;
+    font-family: 'Recoleta-Light';
 }
 
 .feature-card-img {
@@ -20,7 +31,35 @@
 
 #features-heading{
     font-family: 'Recoleta-Bold';
+    font-family: 'Recoleta-Black';
     text-align: center;
-    /* font-size: 2rem; */
-    font-size: 4vw;
+    font-size: 5vw;
+    margin-bottom: 10vh;
+}
+
+
+
+
+@media ( max-width: 450px) {
+
+    .features-container {
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+    .feature-items{
+        text-align: center;
+    
+    }
+
+    .feature-items p {
+        width: 100%;
+    }
+
+    #features-heading{
+
+        font-size: 10vw;
+        margin-bottom: 5vh;
+    }
+
 }

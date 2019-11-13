@@ -8,21 +8,21 @@ class Better extends Component {
     render() {
 
         return(
-            <div>
+            <div className="better-container">
 
-                <h1>Why we're better than renting</h1>
+                <h1 id="better-title">Why we're better than renting</h1>
 
-                <div className="better-containter">
-
+                <div className="better-items-ctn">
+                    
                     <div className="better-OwnHome">
-                        <p>OwnHome</p>
+                        <h2>OwnHome</h2>
                         <div className="better-ctn-item">
                             <img className="better-card-img" src={"./images/Frontpage/checked.svg"} />
                             <p>On the housing ladder now</p>
                         </div>
                         <div className="better-ctn-item">
                             <img className="better-card-img" src={"./images/Frontpage/checked.svg"} />
-                            <p>Skip huge deposit</p>
+                            <p>No huge deposit</p>
                         </div>
                         <div className="better-ctn-item">
                             <img className="better-card-img" src={"./images/Frontpage/checked.svg"} />
@@ -47,7 +47,7 @@ class Better extends Component {
 
                     </div>
                     <div className="better-Rent-Saving">
-                        <p>Renting & Saving</p>
+                        <h2>Renting & Saving</h2>
                         <div className="better-ctn-item">
                             <img className="better-card-img" src={"./images/Frontpage/error.svg"} />
                             <p>Average 10 years saving</p>
