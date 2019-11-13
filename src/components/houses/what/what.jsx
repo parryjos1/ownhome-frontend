@@ -8,6 +8,8 @@ class What extends Component {
 
         return(
             <div className="what-container">
+                <div className="what-ctn-contents">
+
                 {/* <h1>Reviving the Australian Dream</h1> */}
                 <h1>Making home ownership achievable</h1>
 
@@ -25,8 +27,8 @@ class What extends Component {
                 <div className="what-ctn-item">
                     <div className="what-card-text">
                         <h2>Our solution.</h2>
-                        <p>Letting renters build wealth by giving them access to the capital gains of the property. until they're ready to buy</p>
-                        <p>Split the capital gains with our renters until they're ready to buy. Move in </p>
+                        {/* <p>Letting renters build wealth by giving them access to the capital gains of the property. until they're ready to buy</p>
+                        <p>Split the capital gains with our renters until they're ready to buy. Move in </p> */}
                         <p>Flipping the housing model to be more equitable/fair. We give renters a 50/50 cut of the gains of the property. Build wealth when the house goes up until you're ready to buy or leave anytime with no consequences.</p>
                     </div>
                     <div>
@@ -35,8 +37,7 @@ class What extends Component {
                 </div>
 
 
-                        <h2>By first home buyers, for first home buyers.</h2>
-                        <p>Housing affordability is at historic lows. First home buyers have never had it harder to get on the ladder</p>
+
 
 
                 {/* <h3>Ownhome gives renters access to capital gains. Move in today. Zero Deposit</h3>
@@ -78,6 +79,11 @@ Own a home sooner & easier.  */}
 
 
         
+                </div>
+                <div className="what-statement">
+                        <h2>By first home buyers, for first home buyers.</h2>
+                        <p>Housing affordability is at historic lows. First home buyers have never had it harder to get on the ladder</p>
+                </div>
             </div>
         )
     }

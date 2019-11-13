@@ -1,21 +1,35 @@
 @import "../../Fonts/Recoleta/MyFontsWebfontsKit.css";
 
-/* .what-container {
-    padding-left: 15vw;
-    padding-right: 15vw;
-    padding-bottom: 10vh;
+
+.what-container {
+    /* background-color: #a8eef4; */
+    /* margin-top: 10vh; */
+    /* height: 90vh; */
     text-align: center;
+    /* position: static; */
+}
 
-    font-size: 50px;
-
-    position: static;
-
+.what-ctn-contents {
+    width: 70vw;
+    text-align: center;
+    margin-left: 15vw;
+    margin-bottom: 5vh;
 }
 
 .what-container h1 {
+    /* font-size: 60px; */
+    font-size: 5vw;
+    padding-top: 2vh;
     font-family: 'Recoleta-Black';
-    font-size: 6vw;
+    /* font-weight: bold; */
+    /* font-family: 'Recoleta-Bold'; */
 }
+
+/* .home-subheading {
+    font-family: 'Recoleta-Medium';
+    font-size: 2vw;
+} */
+
 
 .what-container h3 {
     font-family: 'Recoleta-Medium';
@@ -26,13 +40,84 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    height: 60vh;
+    /* margin: 100px; */
 }
 
 .what-card-img {
-    width: 25vw;
-    height: 25vh;
+    /* width: 20vw; */
+    /* height: 30vw; */
+    height: 30vh;
+    flex: 1 1 50%;
 }
 
 .what-card-text {
-    width: 42vw;
-} */
+    flex: 1 1 50%;
+    padding-left: 50px;
+}
+
+.what-card-text h2 {
+    font-family: 'Recoleta-Bold';
+    font-size: 2rem;
+}
+.what-card-text p {
+    font-family: 'Recoleta-Light';
+    font-size: 1rem;
+}
+
+.what-statement h2 {
+    font-family: 'Recoleta-Bold';
+    /* font-size: 2rem; */
+    
+}
+.what-statement p {
+    font-family: 'Recoleta-Light';
+    /* font-size: 2rem; */
+
+}
+
+@media ( max-width: 450px) {
+
+
+    .what-container {
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+.what-container h1 {
+    /* font-size: 6vw; */
+    font-size: 2rem;
+}
+
+.what-ctn-contents {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 5vh;
+}
+
+.what-ctn-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align:center;
+}
+
+.what-card-img {
+    width: 40vw;
+    height: 20vh;
+}
+
+.what-card-text {
+    /* width: 42vw; */
+    padding-left: 0;
+}
+
+
+}
+
+
+
+
+

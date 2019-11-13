@@ -97,6 +97,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* justify-content: space-around; */
     width: 60vw;
     margin-left: 20vw;
     font-family: 'Recoleta-Medium';
@@ -118,13 +119,7 @@
     -webkit-box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
     box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
-    outline: none;
-}
-
-.signup-input:focus {
-
-    /* box-shadow: 0 0 5px #ea4756;
-    border: 1px solid #ea4756; */
+    /* outline: none; */
 }
 
 .signup-btn {
@@ -141,18 +136,10 @@
     font-family: 'Recoleta-Bold';
     font-size: 2.5vw;
     cursor: pointer;
-    /* -webkit-box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
-    box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75); */
     -webkit-box-shadow: -0.5px 1px 10px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -0.5px 1px 10px 0px rgba(0,0,0,0.75);
     box-shadow: -0.5px 1px 10px 0px rgba(0,0,0,0.75);
 
-    /* text-decoration: none; */
-	/* color: white; */
-	/* padding: 10px 30px; */
-	/* display: inline-block; */
-	/* position: relative; */
 	border: 1px solid rgba(0,0,0,0.21);
 	border-bottom: 4px solid rgba(0,0,0,0.21);
 	border-radius: 4px;
@@ -236,6 +223,7 @@
     .signup-form {
         width: 90vw;
         margin-left: 5vw;
+        /* margin-top: 4vh; */
 
     }
 
