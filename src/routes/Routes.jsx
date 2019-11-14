@@ -3,6 +3,7 @@ import React from 'react';
 import {HashRouter as Router, Route} from 'react-router-dom';
 // import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 
+
 import Home from '../components/homepage';
 import Jobs from '../components/services/Depreciated/allJobs';
 import PostJob from '../components/services/PostJob/PostJob'
@@ -25,9 +26,23 @@ import Checkout from '../components/services/Checkout/Checkout'
 
 // import Parent from '../components/services/PassData/Parent';
 
+
+import createHistory from 'history/createBrowserHistory';
+import ReactGA from 'react-ga';
+
+const history = createHistory()
+history.listen(location => {
+	ReactGA.set({ page: location.pathname })
+	ReactGA.pageview(location.pathname)
+})
+
+ReactGA.pageview(window.location.pathname)
+
+
 const Routes = (
 
-  <Router>
+  // <Router>
+  <Router history={history}>
 
     <Route exact path="/" component={Home} />
     <Route exact path="/services/jobs" component={Jobs} />

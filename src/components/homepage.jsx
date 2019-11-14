@@ -10,17 +10,17 @@ import What from './houses/what/what'
 import FinalSignup from './houses/final-signup/finalSignup';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
-import ReactGA from 'react-ga';
+// import ReactGA from 'react-ga';
 
-function initializeReactGA() {
-    ReactGA.initialize('UA-152512781-1');
-    ReactGA.pageview('/homepage');
-}
+// function initializeReactGA() {
+//     ReactGA.initialize('UA-152512781-1');
+//     ReactGA.pageview('/homepage');
+// }
 
 class Homepage extends Component {
 
     render() {
-    initializeReactGA()
+    // initializeReactGA()
 
         // let navItems = {'Features': '/features', 'How it works': '/how-it-works', 'FAQs': '/faq', 'Join Waitlist': '/signup'}
         let navItems = {'Features': '/features', 'How it works': '/how-it-works', 'FAQs': '/faq', 'Join Waitlist': '/home'}
