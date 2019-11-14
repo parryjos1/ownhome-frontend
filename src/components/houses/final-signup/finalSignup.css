@@ -1,8 +1,15 @@
 
 .final-signup-ctn {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-around; */
+    text-align: center;
+    width: 70vw;
+    margin-left: 15vw;
+}
+.final-signup-ctn h1 {
+    font-family: 'Recoleta-Medium';
+    font-size: 3vw;
 }
 
 .final-signup-img {
@@ -15,19 +22,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 40vw;
+    width: 70vw;
+    font-family: 'Recoleta-Medium';
+    font-color: #4a4a4a;
 }
 
 .final-signup-input {
     height: 6vh;
-    /* width: 300px */
-    /* width: 75%; */
-    /* flex: 3 1 200px */
     flex: 2 1 60%;
     font-size: 20px; 
     border-radius: 10px;
-    border: solid gray 1px;
+    border: none;
     padding-left: 1vw;
+    font-size: 2vw;
+    -webkit-box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
 
 }
 
@@ -38,9 +48,61 @@
     /* flex: 1 1 200px */
     flex: 1 1 35%;
     margin-left: 1.5%;
-    font-size: 20px;  
     border-radius: 10px;
-    border: none;
-    background-color: #ea4756
+    background-color: #ea4756;
+
+
+    font-family: 'Recoleta-Bold';
+    font-size: 2.5vw;
+    cursor: pointer;
+    -webkit-box-shadow: -0.5px 1px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -0.5px 1px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: -0.5px 1px 10px 0px rgba(0,0,0,0.75);
+
+	border: 1px solid rgba(0,0,0,0.21);
+	border-bottom: 4px solid rgba(0,0,0,0.21);
+	border-radius: 4px;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+
+    /* background: rgba(250,90,90,1); */
+    background: #ea4756;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#ea4756), to(rgba(232,81,81,1)));
+	background: -webkit-linear-gradient(#ea4756 0%, rgba(232,81,81,1) 100%);
+	background: -moz-linear-gradient(#ea4756 0%, rgba(232,81,81,1) 100%);
+	background: -o-linear-gradient(#ea4756 0%, rgba(232,81,81,1) 100%);
+	background: linear-gradient(#ea4756 0%, rgba(232,81,81,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa5a5a', endColorstr='#e85151', GradientType=0 );
+}
+
+@media ( max-width: 450px) {
+
+    .final-signup-ctn {
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+    .final-signup-ctn h1 {
+        font-size: 5vw;
+    }
+
+    .final-signup-form {
+        width: 100%;
+    }
+
+    .final-signup-img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .final-signup-input {
+        font-size: 4vw;
+        height: 8vh;
+    }
+    
+    .final-signup-btn {
+        height: 8.6vh;
+        font-size: 4vw;
+      
+    }
 
 }

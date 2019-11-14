@@ -1,8 +1,8 @@
 @import "../../Fonts/Recoleta/MyFontsWebfontsKit.css";
 
 .better-container {
-    width: 80vw;
-    margin-left: 10vw;
+    width: 70vw;
+    margin-left: 15vw;
     /* text-align: center; */
 }
 
@@ -39,11 +39,13 @@
 
 .better-OwnHome {
     padding-left: 30px;
+    flex: 1 1 47%;
 
 }
 
 .better-Rent-Saving {
     padding-left: 30px;
+    flex: 1 1 53%;
 
 }
 
@@ -92,11 +94,13 @@
         padding-left: 0px;
         width: 100%;
         margin-bottom: 5vh;
+
     }
     
     .better-Rent-Saving {
         padding-left: 0px;
         width: 100%;
+        flex: none;
     }
 
 

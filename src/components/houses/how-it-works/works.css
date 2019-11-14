@@ -1,18 +1,123 @@
+@import "../../Fonts/Recoleta/MyFontsWebfontsKit.css";
+
+
+.hiw-container {
+    width: 70vw;
+    margin-left: 15vw;
+}
+
+.hiw-container h1 {
+    font-family: 'Recoleta-Black';
+    text-align: center;
+    font-size: 5vw;
+}
+.hiw-container h2 {
+    font-family: 'Recoleta-Bold';
+    text-align: center;
+    font-size: 3vw;
+}
+
+.hiw-ctn-text {
+    font-family: 'Recoleta-Light';
+    width: 60%;
+    margin-left: 20%;
+    font-size: 2vw;
+}
 
 .how-it-works-ctn {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-
+    /* align-items: center; */
 }
 
 .how-it-works-item {
-
+    /* flex: 1; */
+    text-align: center;
 }
 
 .hiw-card-img{
     width: 5vw;
     height: 5vh;
+}
+
+.hiw-step {
+    font-family: 'Recoleta-Medium';
+    font-size: 3vw;
+    width: 16vw;
+
+}
+
+.hiw-title {
+    font-family: 'Recoleta-Bold';
+    font-size: 2vw;
+    width: 16vw;
+
+}
+
+.hiw-card-description-text {
+    width: 16vw;
+    font-family: 'Recoleta-Light';
+    font-size: 2vw;
+}
+
+
+/* MEDIA QUERIES */
+
+@media ( max-width: 450px) {
+
+    .hiw-container {
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+    .hiw-container h1 {
+        font-size: 10vw;
+    }
+    .hiw-container h2 {
+        font-size: 6vw;
+    }
+
+    .how-it-works-item {
+        /* flex: 1; */
+        width: 100%;
+    }
+
+    .how-it-works-ctn {
+        flex-wrap: none;
+
+    }
+    
+    .hiw-ctn-text {
+        width: 100%;
+        margin-left: 0;
+        font-size: 4vw;
+        text-align:center;
+    }
+
+    .hiw-step {
+        font-size: 6vw;
+        width: 100%;
+
+    
+    }
+    
+    .hiw-title {
+        font-size: 6vw;
+        width: 100%;
+    
+    }
+    
+    .hiw-card-description-text {
+        width: 100%;
+        font-size: 5vw;
+    }
+
+    .hiw-card-img{
+        width: 20vw;
+        height: 10vh;
+    }
+
+
+
 }

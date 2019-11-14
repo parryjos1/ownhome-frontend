@@ -77,22 +77,22 @@ class Faq extends Component {
                 <h1>Most frequently asked questions</h1>
 
                 <Collapse accordion>
-                    <Panel header="What deposit do I need?" key="1">
+                    <Panel className="FAQ-Question" header="What deposit do I need?" key="1">
                     <p>{text1}</p>
                     </Panel>
-                    <Panel header="Who pays for the costs?" key="2">
+                    <Panel className="FAQ-Question" header="Who pays for the costs?" key="2">
                     <p>{text2}</p>
                     </Panel>
-                    <Panel header="What happens if the house value goes down" key="3">
+                    <Panel className="FAQ-Question" header="What happens if the house value goes down" key="3">
                     <p>{text3}</p>
                     </Panel>
-                    <Panel header="What are your eligibility criteria" key="4">
+                    <Panel className="FAQ-Question" header="What are your eligibility criteria" key="4">
                     <p>{text4}</p>
                     </Panel>
-                    <Panel header="Is this more expensive than renting?" key="5">
+                    <Panel className="FAQ-Question" header="Is this more expensive than renting?" key="5">
                     <p>{text5}</p>
                     </Panel>
-                    <Panel header="How does OwnHome make money?" key="6">
+                    <Panel className="FAQ-Question" header="How does OwnHome make money?" key="6">
                     <p>{text6}</p>
                     </Panel>
                 </Collapse>

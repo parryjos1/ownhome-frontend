@@ -1,7 +1,25 @@
-
+@import "../../Fonts/Recoleta/MyFontsWebfontsKit.css";
 
 .faq-containter {
-    /* background-color: pink; */
+    width: 70vw;
+    margin-left: 15vw;
+}
+
+.faq-containter h1 {
+    font-family: 'Recoleta-Black';
+    font-size: 5vw;
+    text-align: center;
+}
+
+.faq-containter p {
+    font-family: 'Recoleta-Light';
+    font-size: 2vw;
+}
+
+.FAQ-Question {
+    font-family: 'Recoleta-Bold';
+    font-size: 3vw;
+    padding: 20px;
 }
 
 .faq-question {
@@ -12,4 +30,27 @@
 .faq-toggle {
     width: 5vw;
     height: 5vh;
+}
+
+
+@media ( max-width: 450px) {
+    
+    .faq-containter {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .faq-containter h1 {
+        font-size: 10vw;
+    }
+
+    .faq-containter p {
+        font-size: 4vw;
+    }
+
+    .FAQ-Question {
+        font-size: 4vw;
+        padding: 0;
+    }
+
 }

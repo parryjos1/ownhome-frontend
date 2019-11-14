@@ -12,12 +12,11 @@ class FinalSignup extends Component {
                     <h1>Be the first to know when we launch!</h1>
 
                     <div className='final-signup'>
-                            <form className='final-signup-form' >
-                                <input type='text'  className='final-signup-input' placeholder='Enter email address' />
-                                <button className='final-signup-btn'>Join Waitlist</button>
-                            </form>
-
-                        </div>
+                        <form className='final-signup-form' >
+                            <input type='text'  className='final-signup-input' placeholder='Enter email address' />
+                            <button className='final-signup-btn'>Join Waitlist</button>
+                        </form>
+                    </div>
 
                 </div>
 

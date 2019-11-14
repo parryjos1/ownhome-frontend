@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 
-/* @import "/public/Fonts/Recoleta/MyFontsWebfontsKit/MyFontsWebfontsKit.css"; */
 @import "Fonts/Recoleta/MyFontsWebfontsKit.css";
-/* @import "MyFontsWebfontsKit.css"; */
 
 /* 
 .light {
@@ -65,12 +63,9 @@
 }
 
 .home-title h1 {
-    /* font-size: 60px; */
     font-size: 5vw;
     padding-top: 2vh;
     font-family: 'Recoleta-Black';
-    /* font-weight: bold; */
-    /* font-family: 'Recoleta-Bold'; */
 }
 
 .home-subheading {

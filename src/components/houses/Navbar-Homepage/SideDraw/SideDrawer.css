@@ -1,3 +1,6 @@
+
+@import "../../../Fonts/Recoleta/MyFontsWebfontsKit.css";
+
 .side-drawer {
     height: 100%;
     background: white;
@@ -32,6 +35,7 @@
     color: #4a4a4a;
     text-decoration: none;
     font-size: 2rem;
+    font-family: 'Recoleta-Black';
 }
 
 .side-drawer a:hover,

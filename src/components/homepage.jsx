@@ -65,7 +65,7 @@ class Homepage extends Component {
                         </iframe>
                     </div> */}
 
-                    {/* <Element name="/signup" className="element"> */}
+                    <Element name="/signup" className="element">
                         <div className='home-signup'>
                             <form className='signup-form' >
                                 <input type='text'  className='signup-input' placeholder='Enter email address' />
@@ -73,7 +73,7 @@ class Homepage extends Component {
                             </form>
 
                         </div>
-                    {/* </Element> */}
+                    </Element>
 
 
 
@@ -96,13 +96,6 @@ class Homepage extends Component {
                     </Element>
 
                     <FinalSignup />
-
-
-
-
-
-
-
 
             </div>
         )
