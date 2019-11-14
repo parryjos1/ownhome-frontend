@@ -27,24 +27,15 @@ import Checkout from '../components/services/Checkout/Checkout'
 // import Parent from '../components/services/PassData/Parent';
 
 
-import createHistory from 'history/createBrowserHistory';
-import ReactGA from 'react-ga';
-
-const history = createHistory()
-history.listen(location => {
-	ReactGA.set({ page: location.pathname })
-	ReactGA.pageview(location.pathname)
-})
-
-ReactGA.pageview(window.location.pathname)
+import withTracker from '../GoogleAnalytics/withTracker';
 
 
 const Routes = (
 
-  // <Router>
-  <Router history={history}>
+  <Router>
 
-    <Route exact path="/" component={Home} />
+    {/* <Route exact path="/" component={Home} /> */}
+    <Route exact path="/" component={withTracker(Home)} />
     <Route exact path="/services/jobs" component={Jobs} />
     <Route exact path="/services/postjob" component={PostJob} />
     <Route exact path="/services/jobs/:id" component={Job} />
