@@ -26,7 +26,7 @@ import Checkout from '../components/services/Checkout/Checkout'
 
 // import Parent from '../components/services/PassData/Parent';
 
-
+// Added for google analytics
 import withTracker from '../GoogleAnalytics/withTracker';
 
 

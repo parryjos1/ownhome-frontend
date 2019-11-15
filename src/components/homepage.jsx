@@ -9,13 +9,9 @@ import Faq from './houses/faq/faq';
 import What from './houses/what/what'
 import FinalSignup from './houses/final-signup/finalSignup';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import Mailchimp from './houses/Mailchimp/mailchimp'
 
-// import ReactGA from 'react-ga';
 
-// function initializeReactGA() {
-//     ReactGA.initialize('UA-152512781-1');
-//     ReactGA.pageview('/homepage');
-// }
 
 class Homepage extends Component {
 
@@ -73,13 +69,15 @@ class Homepage extends Component {
                     </div> */}
 
                     <Element name="/signup" className="element">
-                        <div className='home-signup'>
+                        {/* Old Signup Form depreciated */}
+                        {/* <div className='home-signup'>
                             <form className='signup-form' >
                                 <input type='text'  className='signup-input' placeholder='Enter email address' />
                                 <button className='signup-btn'>Join Waitlist</button>
                             </form>
 
-                        </div>
+                        </div> */}
+                        <Mailchimp />
                     </Element>
 
 
