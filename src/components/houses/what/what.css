@@ -21,6 +21,8 @@
     padding-top: 2vh;
     font-family: 'Recoleta-Black';
     margin-bottom: 0;
+    padding-top: 10vh;
+
 }
 
 .what-container h3 {
@@ -87,11 +89,14 @@
     .what-container {
         width: 90vw;
         margin-left: 5vw;
+        padding-bottom: 5vh;
     }
 
     .what-container h1 {
         /* font-size: 6vw; */
         font-size: 2rem;
+        padding-top: 5vh;
+
     }
 
     .what-ctn-contents {
@@ -121,7 +126,7 @@
     }
 
     .what-card-text h2 {
-        font-size: 6vw;
+        font-size: 7.5vw;
     }
     .what-card-text p {
         font-size: 5vw;
@@ -134,8 +139,8 @@
     }
     
     .what-statement h2 {
-        font-size: 2rem;
-        /* font-size: 6vw; */
+        /* font-size: 2rem; */
+        font-size: 7.5vw;
         
     }
     .what-statement p {

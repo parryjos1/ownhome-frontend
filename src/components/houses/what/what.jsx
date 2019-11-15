@@ -3,11 +3,15 @@ import './what.css'
 
 class What extends Component {
 
+    componentDidMount() {
+        this.props.getHeight("what-container")
+    }
+
 
     render() {
 
         return(
-            <div className="what-container">
+            <div className="what-container" id="what-container">
                 <div className="what-ctn-contents">
 
                 {/* <h1>Reviving the Australian Dream</h1> */}

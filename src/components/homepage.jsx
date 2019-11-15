@@ -15,6 +15,44 @@ import Mailchimp from './houses/Mailchimp/mailchimp'
 
 class Homepage extends Component {
 
+    state = {
+        whatHeight: null,
+        featuresHeight: null,
+        betterHeight: null,
+        workHeight: null,
+        faqHeight: null
+    }
+
+    // TODO: REFACTOR 
+    // Gets the current height of the top of each component. 
+    // Is then use to change background color of each
+    // State then passed into Navbar component
+    getWhatHeightTop = (id) => {
+        var stickyContainer = document.getElementById(id);
+        let componentHeight =  stickyContainer.offsetTop 
+        this.setState({whatHeight: componentHeight})
+    }
+    getFeaturesHeightTop = (id) => {
+        var stickyContainer = document.getElementById(id);
+        let componentHeight =  stickyContainer.offsetTop 
+        this.setState({featuresHeight: componentHeight})
+    }
+    getBetterHeightTop = (id) => {
+        var stickyContainer = document.getElementById(id);
+        let componentHeight =  stickyContainer.offsetTop 
+        this.setState({betterHeight: componentHeight})
+    }
+    getWorkHeightTop = (id) => {
+        var stickyContainer = document.getElementById(id);
+        let componentHeight =  stickyContainer.offsetTop 
+        this.setState({workHeight: componentHeight})
+    }
+    getFaqHeightTop = (id) => {
+        var stickyContainer = document.getElementById(id);
+        let componentHeight =  stickyContainer.offsetTop 
+        this.setState({faqHeight: componentHeight})
+    }
+
     render() {
     // initializeReactGA()
 
@@ -24,7 +62,13 @@ class Homepage extends Component {
         return(
             <div>
                 {/* <Nav /> */}
-            <Navbar navItems={ navItems }/>
+            <Navbar navItems={ navItems } 
+                whatHeight={this.state.whatHeight} 
+                featuresHeight={this.state.featuresHeight}
+                betterHeight={this.state.betterHeight}
+                workHeight={this.state.workHeight}
+                faqHeight={this.state.faqHeight}
+            />
 
 
                 <div className='home-container'>
@@ -84,20 +128,20 @@ class Homepage extends Component {
 
                 </div>
 
-                    <What />
+                    <What getHeight={this.getWhatHeightTop}/>
 
                     <Element name="/features" className="element">
-                        <Features />
+                        <Features getHeight={this.getFeaturesHeightTop}/>
                     </Element>
 
-                    <Better /> 
+                    <Better getHeight={this.getBetterHeightTop} /> 
 
                     <Element name="/how-it-works" className="element">
-                        <Works />
+                        <Works getHeight={this.getWorkHeightTop}/>
                     </Element> 
 
                     <Element name="/faq" className="element">
-                        <Faq />
+                        <Faq getHeight={this.getFaqHeightTop} />
                     </Element>
 
                     <FinalSignup />

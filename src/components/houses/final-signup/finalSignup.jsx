@@ -8,6 +8,8 @@ class FinalSignup extends Component {
     render() {
 
         return(
+            <div className="final-colour">
+
             <div className="final-signup-ctn">
                 <div className="final-signup-item">
                     <h1>Be the first to know when we launch!</h1>
@@ -30,6 +32,8 @@ class FinalSignup extends Component {
 
 
             </div>
+            </div>
+
         )
     }
 }

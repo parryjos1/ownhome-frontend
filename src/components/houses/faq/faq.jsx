@@ -70,9 +70,15 @@ class Faq extends Component {
 
     // }
 
+    componentDidMount() {
+        this.props.getHeight("faq-colour")
+    }
+
 
     render() {
         return(
+            <div className="faq-colour" id="faq-colour">
+
             <div className='faq-containter'>
                 <h1>Most frequently asked questions</h1>
 
@@ -175,6 +181,8 @@ class Faq extends Component {
 
 
             </div>
+            </div>
+
         )
     }
 }

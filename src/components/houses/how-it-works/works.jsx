@@ -3,8 +3,14 @@ import './works.css';
 
 class Works extends Component {
 
+    componentDidMount() {
+        this.props.getHeight("hiw-colour")
+    }
+
     render() {
         return(
+            <div className="hiw-colour" id="hiw-colour">
+
             <div className="hiw-container">
                 <h1>How OwnHome Works</h1>
                 <h2>Turn your rent payments into a home</h2>
@@ -45,6 +51,8 @@ class Works extends Component {
                 </div>
 
             </div>
+            </div>
+
         )
     }
 }

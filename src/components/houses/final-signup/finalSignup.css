@@ -1,4 +1,9 @@
 
+.final-colour {
+    background-color: #f3d6da;
+    /* background-color: #f3d4e4; */
+}
+
 .final-signup-ctn {
     /* display: flex;
     flex-wrap: wrap;
@@ -11,13 +16,14 @@
     font-family: 'Recoleta-Medium';
     font-size: 3vw;
     margin-bottom: 5vh;
+    padding-top: 10vh;
 }
 
 .final-signup-img {
     /* width: 20vw;
     height: 20vh; */
-    width: 70%;
-    height: 70%;
+    width: 60%;
+    height: 60%;
 }
 
 
@@ -85,7 +91,8 @@
     }
 
     .final-signup-ctn h1 {
-        font-size: 5vw;
+        font-size: 7.5vw;
+        padding-top: 5vh;
     }
 
     .final-signup-form {
@@ -105,7 +112,11 @@
     .final-signup-btn {
         height: 8.6vh;
         font-size: 4vw;
-      
+    }
+
+    .final-signup-img {
+        width: 80%;
+        height: 80%;
     }
 
 }

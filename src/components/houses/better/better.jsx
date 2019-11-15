@@ -4,11 +4,15 @@ import './better.css'
 
 class Better extends Component {
 
+    componentDidMount() {
+        this.props.getHeight("better-container")
+    }
+
 
     render() {
 
         return(
-            <div className="better-container">
+            <div className="better-container" id="better-container">
 
                 <h1 id="better-title">Why we're better than renting</h1>
 

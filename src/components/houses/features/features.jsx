@@ -3,10 +3,16 @@ import './features.css'
 
 class Features extends Component {
 
+    componentDidMount() {
+        this.props.getHeight("feature-colour")
+    }
+
 
     render() {
 
         return(
+            <div className="feature-colour" id="feature-colour">
+
             <div className="features-container">
                 <h1 id="features-heading">Best key features</h1>
 
@@ -38,6 +44,8 @@ class Features extends Component {
 
         
             </div>
+            </div>
+
         )
     }
 }

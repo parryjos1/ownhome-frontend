@@ -38,7 +38,14 @@ class Navbar extends Component {
         return (
             <div className='navbar'>
 
-                <Nav drawerClickHandler={this.drawerToggleClickHandler} navItems={this.props.navItems} />
+                <Nav drawerClickHandler={this.drawerToggleClickHandler} navItems={this.props.navItems} 
+                  navHeights={this.props.componentTops} 
+                  whatHeight={this.props.whatHeight} 
+                  featuresHeight={this.props.featuresHeight}
+                  betterHeight={this.props.betterHeight}
+                  workHeight={this.props.workHeight}
+                  faqHeight={this.props.faqHeight}
+                />
                 <Sidedrawer show={this.state.sideDrawerOpen} navItems={this.props.navItems} />
                 {backdrop}
 

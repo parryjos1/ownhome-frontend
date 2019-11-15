@@ -1,8 +1,8 @@
 @import "../../../Fonts/Recoleta/MyFontsWebfontsKit.css";
 
-.nav {
+.nav-homepage {
     width: 100%;
-    background-color: #a8eef4;
+    /* background-color: #a8eef4; */
     position: fixed;
     height: 10vh;
     top: 0;
