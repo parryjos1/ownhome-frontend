@@ -4,6 +4,7 @@
     width: 70vw;
     margin-left: 15vw;
     /* text-align: center; */
+    padding-bottom: 10vh;
 }
 
 .better-items-ctn {
@@ -16,6 +17,7 @@
     font-family: 'Recoleta-Black';
     text-align: center;
     font-size: 5vw;
+    margin-bottom: 10vh;
 }
 
 .better-items-ctn h2 {
@@ -30,6 +32,8 @@
 
 .better-ctn-item {
     display: flex;
+    /* align-items: flex-start; */
+    align-items: end;
 }
 
 .better-card-img {

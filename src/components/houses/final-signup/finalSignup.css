@@ -10,11 +10,14 @@
 .final-signup-ctn h1 {
     font-family: 'Recoleta-Medium';
     font-size: 3vw;
+    margin-bottom: 5vh;
 }
 
 .final-signup-img {
-    width: 20vw;
-    height: 20vh;
+    /* width: 20vw;
+    height: 20vh; */
+    width: 70%;
+    height: 70%;
 }
 
 

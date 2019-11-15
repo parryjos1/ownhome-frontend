@@ -15,7 +15,8 @@ class What extends Component {
 
                 <div className="what-ctn-item">
                     <div>
-                        <img className="what-card-img" src={"./images/Frontpage/hand.svg"} />
+                        {/* <img className="what-card-img" src={"./images/Frontpage/hand.svg"} /> */}
+                        <img className="what-card-img" src={"./images/Frontpage/warning-sign.svg"} />
                     </div>
                     <div className="what-card-text">
                         <h2>Affordability Crisis.</h2>
@@ -32,7 +33,8 @@ class What extends Component {
                         <p>Flipping the housing model to be more equitable/fair. We give renters a 50/50 cut of the gains of the property. Build wealth when the house goes up until you're ready to buy or leave anytime with no consequences.</p>
                     </div>
                     <div>
-                        <img className="what-card-img" src={"./images/Frontpage/hand.svg"} />
+                        {/* <img className="what-card-img" src={"./images/Frontpage/hand.svg"} /> */}
+                        <img className="what-card-img" src={"./images/Frontpage/tools-and-utensils.svg"} />
                     </div>
                 </div>
 

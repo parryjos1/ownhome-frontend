@@ -4,12 +4,14 @@
 .hiw-container {
     width: 70vw;
     margin-left: 15vw;
+    padding-bottom: 10vh;
 }
 
 .hiw-container h1 {
     font-family: 'Recoleta-Black';
     text-align: center;
     font-size: 5vw;
+    margin-bottom: 5vh;
 }
 .hiw-container h2 {
     font-family: 'Recoleta-Bold';
@@ -19,9 +21,11 @@
 
 .hiw-ctn-text {
     font-family: 'Recoleta-Light';
-    width: 60%;
-    margin-left: 20%;
+    width: 70%;
+    margin-left: 15%;
     font-size: 2vw;
+    text-align: center;
+    margin-bottom: 10vh;
 }
 
 .how-it-works-ctn {
@@ -37,8 +41,9 @@
 }
 
 .hiw-card-img{
-    width: 5vw;
-    height: 5vh;
+    width: 13vw;
+    height: 15vh;
+    margin-bottom: 2vh;
 }
 
 .hiw-step {
@@ -58,7 +63,7 @@
 .hiw-card-description-text {
     width: 16vw;
     font-family: 'Recoleta-Light';
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 

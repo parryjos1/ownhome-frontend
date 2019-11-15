@@ -3,12 +3,14 @@
 .faq-containter {
     width: 70vw;
     margin-left: 15vw;
+    padding-bottom: 10vh;
 }
 
 .faq-containter h1 {
     font-family: 'Recoleta-Black';
     font-size: 5vw;
     text-align: center;
+    margin-bottom: 10vh;
 }
 
 .faq-containter p {

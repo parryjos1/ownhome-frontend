@@ -20,6 +20,7 @@
     font-size: 5vw;
     padding-top: 2vh;
     font-family: 'Recoleta-Black';
+    margin-bottom: 0;
 }
 
 .what-container h3 {
@@ -31,7 +32,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    height: 60vh;
+    height: 55vh;
     /* margin: 100px; */
 }
 
@@ -66,12 +67,12 @@
 
 .what-statement h2 {
     font-family: 'Recoleta-Bold';
-    font-size: 2rem;
+    font-size: 3vw;
     
 }
 .what-statement p {
     font-family: 'Recoleta-Light';
-    font-size: 2rem;
+    font-size: 2vw;
 
 }
 
