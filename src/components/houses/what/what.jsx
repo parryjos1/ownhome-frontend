@@ -34,7 +34,8 @@ class What extends Component {
                         <h2>Our solution.</h2>
                         {/* <p>Letting renters build wealth by giving them access to the capital gains of the property. until they're ready to buy</p>
                         <p>Split the capital gains with our renters until they're ready to buy. Move in </p> */}
-                        <p>Flipping the housing model to be more equitable/fair. We give renters a 50/50 cut of the gains of the property. Build wealth when the house goes up until you're ready to buy or leave anytime with no consequences.</p>
+                        {/* <p>Flipping the housing model to be more equitable/fair. We give renters a 50/50 cut of the gains of the property. Build wealth when the house goes up until you're ready to buy or leave anytime with no consequences.</p> */}
+                        <p>We buy your house for you now. You move in and pay rent as usual. If the property goes up, we split those gains. You lose nothing if it goes down. You take over the property when you're ready.</p>
                     </div>
                     <div>
                         {/* <img className="what-card-img" src={"./images/Frontpage/hand.svg"} /> */}
@@ -88,7 +89,7 @@ Own a home sooner & easier.  */}
                 </div>
                 <div className="what-statement">
                         <h2>By first home buyers, for first home buyers.</h2>
-                        <p>Housing affordability is at historic lows. First home buyers have never had it harder to get on the ladder</p>
+                        <p>Our purpose is to give first home buyers a better path to homeownerhip than the traditional rent and save model. We're building a product we wish existed. </p>
                 </div>
             </div>
         )
