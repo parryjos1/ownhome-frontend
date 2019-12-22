@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-// import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import './nav-homepage.css';
 import DrawerToggleButton from '../SideDraw/DrawerToggleButton'
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Link as Link1, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+
 
 class Nav extends Component {
 
@@ -11,8 +12,6 @@ class Nav extends Component {
     }
 
     listenScrollEvent = e => {
-
-// 900, 375, 414
 
         // this is disgusting... switch statement?
         // TODO: Safety --> Check if props exist
@@ -52,17 +51,26 @@ class Nav extends Component {
             <header className="nav-homepage" style={{backgroundColor: this.state.color}}>
             <nav className="navbar_navigation">
 
-            <div className="nav-logo"><Link activeClass="active" offset={-100} className={'home'} to={'/home'} spy={true} smooth={true} duration={500} >OwnHome</Link></div>
+            {/* Link1:  uses the react-scroll library to navigate to section on page */}
+            <div className="nav-logo"><Link1 activeClass="active" offset={-100} className={'home'} to={'/home'} spy={true} smooth={true} duration={500} >OwnHome</Link1></div>
             <div className="spacer"></div>
+
+            {/* Loops over props passed to NavBar in homepage.jsx  */}
              <div className="nav-items">
                  <ul>
-                 {
-                Object.entries(this.props.navItems).map((k, v) => 
-                    <li><Link activeClass="active" offset={-100} className={`${k[1]}`} to={`${k[1]}`} spy={true} smooth={true} duration={500} >{k[0]}</Link></li>
-                )
-                }
+                    {
+                    Object.entries(this.props.navItems).map((k, v) => 
+                        // <li><Link activeClass="active" offset={-100} className={`${k[1]}`} to={`${k[1]}`} spy={true} smooth={true} duration={500} >{k[0]}</Link></li>
+                        <li><Link1 activeClass="active" offset={-100} className={`${k[1]}`} to={`${k[1]}`} spy={true} smooth={true} duration={500} >{k[0]}</Link1></li>
+                    )
+                    }
+                    {/* Link: uses the react-dom-router to link to a new page */}
+                    {/* PERMANENT NAV ITEMS. TAKEN FROM NAVBAR PROPS */}
+                    <li><Link className="nav-logo" to="/blog">Resources</Link></li>
+                    <li><Link1 activeClass="active" offset={-100} className={`home`} to={`/home`} spy={true} smooth={true} duration={500} >Join Waitlist</Link1></li>
                 </ul>
             </div>
+
             <div className="nav-toggle-btn">
                 <DrawerToggleButton click={this.props.drawerClickHandler} />
             </div>
@@ -100,5 +108,4 @@ class Nav extends Component {
 // );
 
 export default Nav;
-// export default nav;
 

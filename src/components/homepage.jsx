@@ -57,7 +57,7 @@ class Homepage extends Component {
     // initializeReactGA()
 
         // let navItems = {'Features': '/features', 'How it works': '/how-it-works', 'FAQs': '/faq', 'Join Waitlist': '/signup'}
-        let navItems = {'Features': '/features', 'How it works': '/how-it-works', 'FAQs': '/faq', 'Join Waitlist': '/home'}
+        let navItems = {'Features': '/features', 'How it works': '/how-it-works', 'FAQs': '/faq'}
 
         return(
             <div>

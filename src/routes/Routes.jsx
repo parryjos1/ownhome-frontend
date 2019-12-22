@@ -5,6 +5,7 @@ import {HashRouter as Router, Route} from 'react-router-dom';
 
 
 import Home from '../components/homepage';
+import Blog from '../components/houses/blog/blogComponent'
 import Jobs from '../components/services/Depreciated/allJobs';
 import PostJob from '../components/services/PostJob/PostJob'
 import Job from '../components/services/Depreciated/job'
@@ -36,6 +37,7 @@ const Routes = (
 
     {/* <Route exact path="/" component={Home} /> */}
     <Route exact path="/" component={withTracker(Home)} />
+    <Route exact path="/blog" component={Blog} />
     <Route exact path="/services/jobs" component={Jobs} />
     <Route exact path="/services/postjob" component={PostJob} />
     <Route exact path="/services/jobs/:id" component={Job} />
