@@ -1,0 +1,57 @@
+@import "../../../Fonts/Recoleta/MyFontsWebfontsKit.css";
+
+.blog-title {
+    font-family: 'Recoleta-Bold';
+    font-size: 3em;
+}
+
+.blog-container {
+    font-family: 'Recoleta-Light';
+    width: 50vw;
+    margin-left: 25vw;
+    text-align: left;
+    color: black;
+}
+
+.blog-contents {
+    font-size: 2em;
+}
+
+#content-title {
+    font-family: 'Recoleta-Medium';
+    font-size: 2vw;
+    text-align: left;
+}
+
+
+.blog-signup {
+    font-size: 2em;
+}
+
+@media ( max-width: 450px) {
+
+    .blog-title {
+        font-size: 2em;
+    }
+
+    .blog-container {
+        font-family: 'Recoleta-Light';
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+    #content-title {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    .blog-contents {
+        font-size: 1.4em;
+    }
+
+    .blog-signup {
+        font-size: 1.4em;
+    }
+
+
+}

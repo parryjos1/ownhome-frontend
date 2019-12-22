@@ -5,7 +5,7 @@ import {HashRouter as Router, Route} from 'react-router-dom';
 
 
 import Home from '../components/homepage';
-import Blog from '../components/houses/blog/blogComponent'
+import Blog from '../components/houses/blog/blogHome'
 import Jobs from '../components/services/Depreciated/allJobs';
 import PostJob from '../components/services/PostJob/PostJob'
 import Job from '../components/services/Depreciated/job'
@@ -29,6 +29,9 @@ import Checkout from '../components/services/Checkout/Checkout'
 
 // Added for google analytics
 import withTracker from '../GoogleAnalytics/withTracker';
+
+// Blog Contents
+import SaveDepositSixMonths from '../components/houses/blog/blogContents/how-to-save-for-a-deposit-in-6-months'
 
 
 const Routes = (
@@ -55,6 +58,10 @@ const Routes = (
     <Route exact path="/services/users/dashboard/jobs/:id/checkout" component={Checkout} />
 
     <Route exact path="/services/businesses/dashboard/payment" component={Payments} />
+
+    {/* Blog Routes */}
+    <Route exact path="/blog/how-to-save-for-a-house-deposit-in-six-months" component={SaveDepositSixMonths} />
+
 
   </Router>
 )
