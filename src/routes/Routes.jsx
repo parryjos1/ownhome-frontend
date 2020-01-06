@@ -33,11 +33,11 @@ import withTracker from '../GoogleAnalytics/withTracker';
 // Blog Contents
 import SaveDepositSixMonths from '../components/houses/blog/blogContents/how-to-save-for-a-deposit-in-6-months'
 
+// Referral
+import referral from '../components/houses/referral/referral'
 
 const Routes = (
-
   <Router>
-
     {/* <Route exact path="/" component={Home} /> */}
     <Route exact path="/" component={withTracker(Home)} />
     <Route exact path="/blog" component={Blog} />
@@ -60,8 +60,10 @@ const Routes = (
     <Route exact path="/services/businesses/dashboard/payment" component={Payments} />
 
     {/* Blog Routes */}
-    <Route exact path="/blog/how-to-save-for-a-house-deposit-in-six-months" component={SaveDepositSixMonths} />
+    <Route exact path="/blog/how-to-save-focr-a-house-deposit-in-six-months" component={SaveDepositSixMonths} />
 
+  {/* Referral Routes */}
+  <Route exact path="/referral" component={referral} />
 
   </Router>
 )

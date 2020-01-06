@@ -1,0 +1,21 @@
+/* @import "../../Fonts/Recoleta/MyFontsWebfontsKit.css"; */
+
+.referral-ctn {
+    text-align: center;
+    margin-top: 30vh;
+}
+
+.referral-header {
+    width: 100%;
+    font-size: 5vh;
+    font-family: 'Recoleta-Medium';
+
+}
+
+.referral-input {
+    width: 43%;
+    height: 5vh;
+    font-size: 3vh;
+    font-family: 'Recoleta-Medium';
+    border-radius: 10px;
+}
