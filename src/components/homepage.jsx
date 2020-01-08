@@ -9,8 +9,8 @@ import Faq from './houses/faq/faq';
 import What from './houses/what/what'
 import FinalSignup from './houses/final-signup/finalSignup';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-import Mailchimp from './houses/Mailchimp/mailchimp'
-
+import Mailchimp from './houses/Mailchimp/mailchimp';
+import { Helmet } from "react-helmet";
 
 
 class Homepage extends Component {
@@ -62,6 +62,11 @@ class Homepage extends Component {
         return(
             <div>
                 {/* <Nav /> */}
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>OwnHome. Don't Rent. Own.</title>
+                    <meta name="description" content="OwnHome. A faster path to home ownership. No more renting. No more huge house deposits."/>
+                </Helmet>
             <Navbar navItems={ navItems } 
                 whatHeight={this.state.whatHeight} 
                 featuresHeight={this.state.featuresHeight}

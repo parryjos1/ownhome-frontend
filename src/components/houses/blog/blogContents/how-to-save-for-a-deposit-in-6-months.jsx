@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
 import './blogContents.css';
 import FinalSignup from '../../final-signup/finalSignup';
-import MailChimp from '../../Mailchimp/mailchimp'
+import MailChimp from '../../Mailchimp/mailchimp';
+import { Helmet } from "react-helmet";
 
 function SaveDepositSixMonths (){
     return (
+
         <div className="blog-container">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>How to save for a house in 6 months</title>
+                <meta name="description" content="How to save for an australian house deposit in 6 months"/>
+            </Helmet>
 
             <div className="blog-title">
                 <p>How to save for a house deposit in 6 months</p>
+                <p>and not be a shrimp</p>
             </div>
             <div className="blog-social">
                 {/* <p>Facebook, twitter, instagram</p> */}
