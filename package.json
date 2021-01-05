@@ -10,7 +10,7 @@
     "acorn": "^7.0.0",
     "antd": "^3.23.6",
     "assign-deep": "^1.0.1",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "core-util-is": "^1.0.2",
     "gh-pages": "^2.1.1",
     "node-sass": "^4.13.0",
